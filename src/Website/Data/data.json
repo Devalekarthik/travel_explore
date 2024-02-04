@@ -1,0 +1,2022 @@
+{
+    "Header": {
+        "company": "EXPLORE",
+        "title": "Your Journey Your Story",
+        "subTitle": "Choose Your Favourite Destination",
+        "bannerVideo": "./BannerVideo/HomePage.mp4",
+        "bannerImg": "./BannerVideo/BannerImg.png",
+        "nav-name": [
+            {
+                "tab": "Rating"
+            },
+            {
+                "tab": "Popular Destinations"
+            },
+            {
+                "tab": "Search Destinations"
+            },
+            {
+                "tab": "Hotels"
+            },
+            {
+                "tab": "Reviews"
+            },
+            {
+                "tab": "Contact"
+            },
+            {
+                "tab": "Creater"
+            }
+        ]
+    },
+    "Rating": [
+        {
+            "ratingNumber": 10,
+            "ratingDesc": "World of experience"
+        },
+        {
+            "ratingNumber": "2K+",
+            "ratingDesc": "Fine Destination"
+        },
+        {
+            "ratingNumber": "10K+",
+            "ratingDesc": "Customer Reviews"
+        },
+        {
+            "ratingNumber": 4.8,
+            "ratingDesc": "Overall Ratings"
+        }
+    ],
+    "PopularDestination": {
+        "title": "Popular Destinations",
+        "subTitle": "Tours give you the opportunity to explore",
+        "travelPlaces": [
+            {
+                "title": "Hokkaido, Japan",
+                "info": "Hokkaido is the second largest island of Japan and is located in the northernmost part of the country. It is also the largest and northernmost prefecture of Japan, making up its own region. The island is separated from Honshu, the main island of Japan, by the Tsugaru Strait and is connected to it by the undersea railway Seikan Tunnel. It is a place to visit year round because of its cool summers and snowy winters offering ski resorts and hot springs. Sapporo, the capital of Hokkaido, hosts the annual Snow Festival in February. Other areas of interest include Niseko, Otaru and Hakodate.",
+                "img1": "./PopularDestination/Hokkaido-Img1.jpg",
+                "img2": "./PopularDestination/Hokkaido-Img2.jpg"
+            },
+            {
+                "title": "Venice Canals, Italy",
+                "info": "A gondola ride through the canals of Venice is a tradition that travelers have been participating in for centuries. Venice is a city of islands and the canals have long been, in many ways, the city's streets. Lining the canals are the old buildings which have remained relatively unchanged for hundreds of years, adding to the romantic charm. The Grand Canal is the most famous of these waterways and one of the most photographed sites in Venice.",
+                "img1": "./PopularDestination/Venice Canals-Img1.jpg",
+                "img2": "./PopularDestination/Venice Canals-Img2.jpg"
+            }
+        ]
+    },
+    "Destination": {
+        "title": "Search Your Dream Destinations",
+        "subTitle": "Fill in the field below to find the best destination",
+        "destination-offers": [
+            "3 days trip",
+            "3 times food (veg & non-veg)",
+            "2 times snacks"
+        ],
+        "hotels-offers": [
+            "Free Wi-fi",
+            "2 Confortable Beds",
+            "1 BathRoom",
+            "Unlimited BreakFast",
+            "Free Spa"
+        ],
+        "hotels-discount": "60% OFF",
+        "places": [
+            {
+                "country": "India",
+                "place": "The Taj Mahal",
+                "rating": 4.8,
+                "avg-cost": "10,000",
+                "type": "Historical",
+                "desc": "The Taj Mahal is one of the seven wonders of the world and is considered to be the most popular tourist attraction in India. A symbol of love, the Taj was built by Mughal Emperor Shah Jahan for his queen Mumtaz. Tagore described the Taj as a 'teardrop on the cheek of eternity'. The monument attracts a lot of tourists all around the year.",
+                "Img": "./DestinationPhotos/TajMahal.jpg",
+                "hotels": [
+                    {
+                        "place": "The Oberoi Amarvilas",
+                        "Img": "./Hotel/India/Amarvilas.jpg",
+                        "rating": 4.8,
+                        "avg-cost": "60,000"
+                    },
+                    {
+                        "place": "Hotel Pratap",
+                        "Img": "./Hotel/India/Pratap.jpg",
+                        "rating": 3.9,
+                        "avg-cost": "5,000"
+                    },
+                    {
+                        "place": "Hotel Atulyaa Taj",
+                        "Img": "./Hotel/India/AtulyaaTaj.png",
+                        "rating": 4.0,
+                        "avg-cost": "10,000"
+                    },
+                    {
+                        "place": "Tajview, Agra - IHCL SeleQtions",
+                        "Img": "./Hotel/India/Tajview.jpg",
+                        "rating": 4.4,
+                        "avg-cost": "22,000"
+                    },
+                    {
+                        "place": "Howard Plaza The Fern",
+                        "Img": "./Hotel/India/HowardPlaza.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "15,000"
+                    }
+                ]
+            },
+            {
+                "country": "India",
+                "place": "Golden Temple",
+                "rating": 4.7,
+                "avg-cost": "12,000",
+                "type": "Historical",
+                "desc": "Tangibly the most spiritual place in India, Golden Temple, also known as Sri Harmindar Sahib, is the holiest shrine in Sikhism which is alive with religious fervour and sacredness. Although the Golden Temple itself is of great historical and architectural interest, it is the view of the resplendent shrine, glistening in the centre of the tank, bringing an infinite calmness that is most memorable to a visitor.",
+                "Img": "./DestinationPhotos/GoldenTemple.jpg",
+                "hotels": [
+                    {
+                        "place": "Hotel Grand Cabbana By LevelUp Hotels & Resorts",
+                        "Img": "./Hotel/India/GrandCabbana.jpg",
+                        "rating": 4.0,
+                        "avg-cost": "2,500"
+                    },
+                    {
+                        "place": "Sawera Grand",
+                        "Img": "./Hotel/India/SaweraGrand.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "3,500"
+                    },
+                    {
+                        "place": "Regenta Central",
+                        "Img": "./Hotel/India/RegentaCentral.jpg",
+                        "rating": 4.9,
+                        "avg-cost": "7,000"
+                    }
+                ]
+            },
+            {
+                "country": "India",
+                "place": "The Red Fort",
+                "rating": 4.5,
+                "avg-cost": "18,000",
+                "type": "Historical",
+                "desc": "The Red Fort is a historical tourist attraction in India in the national capital of New Delhi. Located in the center of the city, it was the main residence of the emperors of the Mughal dynasty. It was constructed by Shah Jahan in the year 1939 as a result of a capital shift from Agra to Delhi.",
+                "Img": "./DestinationPhotos/RedFort.jpg",
+                "hotels": [
+                    {
+                        "place": "Godwin Hotels",
+                        "Img": "./Hotel/India/Godwin.png",
+                        "rating": 3.9,
+                        "avg-cost": "2,500"
+                    },
+                    {
+                        "place": "The Park New Delhi",
+                        "Img": "./Hotel/India/Park.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "8,000"
+                    },
+                    {
+                        "place": "The Lodhi",
+                        "Img": "./Hotel/India/Lodhi.jpg",
+                        "rating": 4.6,
+                        "avg-cost": "22,000"
+                    },
+                    {
+                        "place": "The Imperial",
+                        "Img": "./Hotel/India/Imperial.jpg",
+                        "rating": 4.7,
+                        "avg-cost": "25,000"
+                    }
+                ]
+            },
+            {
+                "country": "India",
+                "place": "Mysore Palace",
+                "rating": 4.7,
+                "avg-cost": "7,000",
+                "type": "Historical",
+                "desc": "Mysore Palace An incredibly breathtaking example of Indo Saracenic style of architecture, the Mysore Palace is a magnificent edifice located in Mysore in the state of Karnataka. Also known as the Amba Vilas Palace, it is the former palace of the royal family of Mysore and is still their official residence.",
+                "Img": "./DestinationPhotos/MysorePalace.jpg",
+                "hotels": [
+                    {
+                        "place": "Radisson Blu Plaza Hotel, Mysore",
+                        "Img": "./Hotel/India/Radisson.jpg",
+                        "rating": 4.5,
+                        "avg-cost": "9,000"
+                    },
+                    {
+                        "place": "Ginger Mysore",
+                        "Img": "./Hotel/India/Ginger.jpg",
+                        "rating": 3.8,
+                        "avg-cost": "3,500"
+                    },
+                    {
+                        "place": "Hotel Lok Sagar",
+                        "Img": "./Hotel/India/LokSagar.png",
+                        "rating": 4.6,
+                        "avg-cost": "5,000"
+                    },
+                    {
+                        "place": "Sandesh The Prince",
+                        "Img": "./Hotel/India/Sandesh.jpg",
+                        "rating": 4.1,
+                        "avg-cost": "3,000"
+                    },
+                    {
+                        "place": "Hotel Southern Star Mysuru",
+                        "Img": "./Hotel/India/SouthernStar.png",
+                        "rating": 4.2,
+                        "avg-cost": "5,000"
+                    }
+                ]
+            },
+            {
+                "country": "India",
+                "place": "Amber Fort",
+                "rating": 4.6,
+                "avg-cost": "13,500",
+                "type": "Historical",
+                "desc": "Cradled on the top of the Aravali Hill and forming a beautiful reflection across the Maotha Lake, lies the Amber Fort. An architectural masterpiece and with significant reference in the Indian history, it is visited by over five thousand tourists daily. Only eleven kilometres away from the capital city of Jaipur, Amber Fort is clad in pink and yellow sandstone and is a part of an extensive complex.",
+                "Img": "./DestinationPhotos/AmberFort.jpg",
+                "hotels": [
+                    {
+                        "place": "Umaid Residency - A Regal Heritage Home",
+                        "Img": "./Hotel/India/UmaidResidency.png",
+                        "rating": 4.1,
+                        "avg-cost": "3,500"
+                    },
+                    {
+                        "place": "Hotel Amer View",
+                        "Img": "./Hotel/India/AmerView.jpg",
+                        "rating": 4.1,
+                        "avg-cost": "2,500"
+                    },
+                    {
+                        "place": "Amer Valley",
+                        "Img": "./Hotel/India/AmerValley.png",
+                        "rating": 3.9,
+                        "avg-cost": "2,000"
+                    },
+                    {
+                        "place": "Trident Jaipur",
+                        "Img": "./Hotel/India/Trident.jpg",
+                        "rating": 4.4,
+                        "avg-cost": "8,000"
+                    }
+                ]
+            },
+            {
+                "country": "India",
+                "place": "Baga Beach",
+                "rating": 4.5,
+                "avg-cost": "7,500",
+                "type": "Beach",
+                "desc": "Goa a tiny state on the western coast of India along the Arabian Sea, is famous for its laidback beaches, night long parties, beach shacks, water sports and many other adventure activities. One of the most visited tourist attractions in India, Goa has many beaches along its beautiful coastline, catering to millions of visitors every year.",
+                "Img": "./DestinationPhotos/BagaBeach.jpg",
+                "hotels": [
+                    {
+                        "place": "Kyriad Prestige Calangute Goa by OTHPL",
+                        "Img": "./Hotel/India/Kyriad.jpg",
+                        "rating": 4.1,
+                        "avg-cost": "7,500"
+                    },
+                    {
+                        "place": "Acron Waterfront Resort",
+                        "Img": "./Hotel/India/AcronWaterfront.png",
+                        "rating": 4.3,
+                        "avg-cost": "8,000"
+                    },
+                    {
+                        "place": "DoubleTree by Hilton Hotel Goa - Arpora - Baga",
+                        "Img": "./Hotel/India/DoubleTree.jpg",
+                        "rating": 4.5,
+                        "avg-cost": "15,000"
+                    },
+                    {
+                        "place": "Resort Rio, Goa",
+                        "Img": "./Hotel/India/ResortRio.jpg",
+                        "rating": 4.4,
+                        "avg-cost": "10,000"
+                    },
+                    {
+                        "place": "Paparazzi Resort",
+                        "Img": "./Hotel/India/Paparazzi.jpg",
+                        "rating": 3.2,
+                        "avg-cost": "4,500"
+                    }
+                ]
+            },
+            {
+                "country": "Italy",
+                "place": "Colosseum",
+                "rating": 4.5,
+                "avg-cost": "28,500",
+                "type": "Historical",
+                "desc": "For travelers making their way through Italy, the Colosseum is a must see. This huge Amphitheater is the largest of its kind ever built by the Roman Empire and has remained a model for sports facilities right up to modern times.",
+                "Img": "./DestinationPhotos/Colosseum.jpg",
+                "hotels": [
+                    {
+                        "place": "Mercure Roma Centro Colosseo",
+                        "Img": "./Hotel/Italy/MercureRoma.jpg",
+                        "rating": 4.3,
+                        "avg-cost": "10,000"
+                    },
+                    {
+                        "place": "Hotel Centro Cavour Roma",
+                        "Img": "./Hotel/Italy/HotelCentro.jpg",
+                        "rating": 4.5,
+                        "avg-cost": "11,500"
+                    },
+                    {
+                        "place": "Hotel Majestic Roma",
+                        "Img": "./Hotel/Italy/MajesticRoma.jpg",
+                        "rating": 4.4,
+                        "avg-cost": "11,000"
+                    },
+                    {
+                        "place": "Hotel Diocleziano",
+                        "Img": "./Hotel/Italy/Diocleziano.jpg",
+                        "rating": 4.6,
+                        "avg-cost": "13,500"
+                    },
+                    {
+                        "place": "Hotel Grifo",
+                        "Img": "./Hotel/Italy/Grifo.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "7,500"
+                    }
+                ]
+            },
+            {
+                "country": "Italy",
+                "place": "VENICE CANALS",
+                "rating": 4.8,
+                "avg-cost": "90,500",
+                "type": "Lake Park",
+                "desc": "A gondola ride through the canals of Venice is a tradition that travelers have been participating in for centuries. Venice is a city of islands and the canals have long been, in many ways, the city's streets. Lining the canals are the old buildings which have remained relatively unchanged for hundreds of years, adding to the romantic charm. The Grand Canal is the most famous of these waterways and one of the most photographed sites in Venice.",
+                "Img": "./DestinationPhotos/VeniceCanals.jpg",
+                "hotels": [
+                    {
+                        "place": "Rome Cavalieri, A Waldorf Astoria Hotel",
+                        "Img": "./Hotel/Italy/WaldorfAstoria.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "10,500"
+                    },
+                    {
+                        "place": "Canal Grande",
+                        "Img": "./Hotel/Italy/CanalGrande.png",
+                        "rating": 4.7,
+                        "avg-cost": "24,000"
+                    },
+                    {
+                        "place": "Hotel Carlton On The Grand Canal",
+                        "Img": "./Hotel/Italy/Carlton.jpg",
+                        "rating": 4.3,
+                        "avg-cost": "13,000"
+                    },
+                    {
+                        "place": "BW Premier Collection CHC Continental",
+                        "Img": "./Hotel/Italy/Continental.jpg",
+                        "rating": 4.0,
+                        "avg-cost": "8,500"
+                    },
+                    {
+                        "place": "Palazzetto Madonna",
+                        "Img": "./Hotel/Italy/PalazzettoMadonna.jpg",
+                        "rating": 4.5,
+                        "avg-cost": "14,000"
+                    }
+                ]
+            },
+            {
+                "country": "Italy",
+                "place": "POMPEII",
+                "rating": 4.3,
+                "avg-cost": "35,500",
+                "type": "Historical",
+                "desc": "Below the rumbling volcano of Mt Vesuvius stand the ruins of Pompeii, an ancient Roman city preserved in time by the eruption in A.D. 79. Excavations have revealed the remains of houses, markets, baths, temples, theaters, streets scarred by the tracks of chariots, and human remains. Visitors can tour the site, walk along the old streets, and see the engineering used by Romans over 2000 years ago.",
+                "Img": "./DestinationPhotos/Pompeii.jpg",
+                "hotels": [
+                    {
+                        "place": "Hotel Diana",
+                        "Img": "./Hotel/Italy/Diana.jpg",
+                        "rating": 3.3,
+                        "avg-cost": "7,500"
+                    },
+                    {
+                        "place": "Hotel del Sole",
+                        "Img": "./Hotel/Italy/delSole.jpg",
+                        "rating": 4.1,
+                        "avg-cost": "8,000"
+                    },
+                    {
+                        "place": "Hotel Miramare Stabia",
+                        "Img": "./Hotel/Italy/MiramareStabia.jpg",
+                        "rating": 4.4,
+                        "avg-cost": "13,000"
+                    },
+                    {
+                        "place": "Hotel Degli Amici",
+                        "Img": "./Hotel/Italy/DegliAmici.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "8,000"
+                    },
+                    {
+                        "place": "Caruso, A Belmond Hotel, Amalfi Coast",
+                        "Img": "./Hotel/Italy/Belmond.jpg",
+                        "rating": 4.7,
+                        "avg-cost": "22,000"
+                    }
+                ]
+            },
+            {
+                "country": "Italy",
+                "place": "LEANING TOWER OF PISA",
+                "rating": 4.4,
+                "avg-cost": "32,000",
+                "type": "Historical",
+                "desc": "The Leaning Tower of Pisa is actually just one of many attractions in the city of Pisa, but its fame, gained from its flaw, is world renown. Work began on the tower in the 1100s and the sinking, which led to the lean, began by the time the tower reached the third story. Prior to restoration work in the 1990s, it was predicted to topple over by the year 2000. Today, visitors can climb up the stairs of the tower for a fabulous view over the city. The Leaning Tower, also known as La Torre Pendete, stands on the Piazza del Duomo.",
+                "Img": "./DestinationPhotos/Leaning-Tower-of-Pisa.jpg",
+                "hotels": [
+                    {
+                        "place": "Grand Hotel Bonanno",
+                        "Img": "./Hotel/Italy/Bonanno.png",
+                        "rating": 4.2,
+                        "avg-cost": "7,000"
+                    },
+                    {
+                        "place": "B&B IL TOSCANO",
+                        "Img": "./Hotel/Italy/TOSCANO.png",
+                        "rating": 4.1,
+                        "avg-cost": "4,500"
+                    },
+                    {
+                        "place": "Hotel Bologna",
+                        "Img": "./Hotel/Italy/HotelBologna.jpg",
+                        "rating": 4.6,
+                        "avg-cost": "9,000"
+                    },
+                    {
+                        "place": "Hotel Alessandro Della Spina",
+                        "Img": "./Hotel/Italy/Alessandro.jpg",
+                        "rating": 4.3,
+                        "avg-cost": "7,000"
+                    },
+                    {
+                        "place": "Hotel Villa Kinzica",
+                        "Img": "./Hotel/Italy/VillaKinzica.jpg",
+                        "rating": 3.8,
+                        "avg-cost": "5,000"
+                    }
+                ]
+            },
+            {
+                "country": "Italy",
+                "place": "LAKE COMO",
+                "rating": 4.2,
+                "avg-cost": "91,000",
+                "type": "Lake Park",
+                "desc": " Lake Como is one of Italy's most scenic areas, surrounded by mountains and lined by small picturesque towns. Traditionally a haunt of the wealthy, the lake has many old opulent villas and palaces. Around the lake are resort communities and an 1hth century abbey. The mild climate is also a draw for tourists, with characteristics similar to that of the Mediterranean.",
+                "Img": "./DestinationPhotos/Lake-Como.jpg",
+                "hotels": [
+                    {
+                        "place": "Hotel du Lac Varenna",
+                        "Img": "./Hotel/Italy/Varenna.jpg",
+                        "rating": 4.6,
+                        "avg-cost": "20,000"
+                    },
+                    {
+                        "place": "Grand Hotel Menaggio",
+                        "Img": "./Hotel/Italy/Menaggio.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "18,000"
+                    },
+                    {
+                        "place": "Hotel Garni Corona",
+                        "Img": "./Hotel/Italy/Corona.jpg",
+                        "rating": 4.7,
+                        "avg-cost": "22,000"
+                    },
+                    {
+                        "place": "Hotel Sonenga",
+                        "Img": "./Hotel/Italy/Sonenga.jpg",
+                        "rating": 3.9,
+                        "avg-cost": "11,000"
+                    },
+                    {
+                        "place": "Hotel Metropole Bellagio",
+                        "Img": "./Hotel/Italy/MetropoleBellagio.jpg",
+                        "rating": 4.0,
+                        "avg-cost": "15,000"
+                    }
+                ]
+            },
+            {
+                "country": "France",
+                "place": "Disneyland",
+                "rating": 4.7,
+                "avg-cost": "137,500",
+                "type": "Fun Park",
+                "desc": "In 2022, the famous amusement park welcomed more than 15 million visitors, making it the most visited attraction in France. According to the Atout France report, Disneyland Paris attracts as many French tourists as foreigners each year. Its iconic attractions, such as Space Mountain, the Magic Carpets or the Tower of Terror, along with the themed restaurants, grandiose hotels and souvenir shops delight young and old alike.",
+                "Img": "./DestinationPhotos/Disneyland.jpg",
+                "hotels": [
+                    {
+                        "place": "Disney's Grand Californian Hotel & Spa",
+                        "Img": "./Hotel/France/GrandCalifornian.jpg",
+                        "rating": 4.7,
+                        "avg-cost": "57,000"
+                    },
+                    {
+                        "place": "Best Western Plus Anaheim Inn",
+                        "Img": "./Hotel/France/WesternPlusAnaheim.jpg",
+                        "rating": 4.4,
+                        "avg-cost": "30,000"
+                    },
+                    {
+                        "place": "Anaheim Desert Inn and Suites",
+                        "Img": "./Hotel/France/InnSuites.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "20,000"
+                    },
+                    {
+                        "place": "Tropicana Inn & Suites",
+                        "Img": "./Hotel/France/Tropicana.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "18,000"
+                    },
+                    {
+                        "place": "Disneyland Hotel",
+                        "Img": "./Hotel/France/Disneyland.jpg",
+                        "rating": 4.6,
+                        "avg-cost": "38,000"
+                    }
+                ]
+            },
+            {
+                "country": "France",
+                "place": "The Louvre Museum",
+                "rating": 4.4,
+                "avg-cost": "16,500",
+                "type": "Historical",
+                "desc": "The Louvre Museum was the second most visited site in France with 7.8 million visitors. Unlike Disneyland Paris, the study revealed that 70% of the museum's visitors are foreigners, mainly European and American. With more than 400 exhibition halls, artwork and artifacts cover a geographical area ranging from Western Europe to East Asia and Greece. Housed in the former residence of the kings of France, the Louvre has some of the most beautiful paintings in the world, such as the Mona Lisa, The Coronation of Napoleon and The Raft of the Medusa.",
+                "Img": "./DestinationPhotos/LouvreMuseum.jpg",
+                "hotels": [
+                    {
+                        "place": "Hôtel du Louvre, in The Unbound Collection by Hyatt",
+                        "Img": "./Hotel/France/duLouvre.jpg",
+                        "rating": 4.6,
+                        "avg-cost": "44,000"
+                    },
+                    {
+                        "place": "Hotel Louvre Bons Enfants",
+                        "Img": "./Hotel/France/LouvreBons.png",
+                        "rating": 3.8,
+                        "avg-cost": "11,000"
+                    },
+                    {
+                        "place": "Hotel Malte - Astotel",
+                        "Img": "./Hotel/France/Malte.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "17,000"
+                    },
+                    {
+                        "place": "Hotel Saint Honore 85",
+                        "Img": "./Hotel/France/SaintHonore.jpg",
+                        "rating": 3.7,
+                        "avg-cost": "10,000"
+                    }
+                ]
+            },
+            {
+                "country": "France",
+                "place": "The Palace of Versailles",
+                "rating": 4.5,
+                "avg-cost": "14,500",
+                "type": "Historical",
+                "desc": "In 2022, more than 7 million tourists walked the Hall of Mirrors, discovered the King's Apartment and visited the sublime gardens at the Palace of Versailles. This site, just twenty kilometres southwest of Paris, is classified as a World Heritage Site and testifies to the ambition of Louis XIV, nickplaced 'Louis the Great' or 'the Sun King.' This palace is still the symbol of the political, economic and cultural power of 17th century France.",
+                "Img": "./DestinationPhotos/Versailles.png",
+                "hotels": [
+                    {
+                        "place": "Hôtel Le Versailles",
+                        "Img": "./Hotel/France/LeVersailles.jpg",
+                        "rating": 4.1,
+                        "avg-cost": "8,500"
+                    },
+                    {
+                        "place": "Hôtel du Jeu de Paume",
+                        "Img": "./Hotel/France/dePaume.jpg",
+                        "rating": 4.6,
+                        "avg-cost": "7,500"
+                    },
+                    {
+                        "place": "Hôtel la Residence Du Berry",
+                        "Img": "./Hotel/France/DuBerry.jpg",
+                        "rating": 4.3,
+                        "avg-cost": "10,000"
+                    },
+                    {
+                        "place": "Hôtel du Cheval Rouge",
+                        "Img": "./Hotel/France/duCheval.jpg",
+                        "rating": 3.9,
+                        "avg-cost": "9,900"
+                    },
+                    {
+                        "place": "Mercure Versailles Chateau",
+                        "Img": "./Hotel/France/MercureVersailles.jpg",
+                        "rating": 4.0,
+                        "avg-cost": "12,000"
+                    }
+                ]
+            },
+            {
+                "country": "France",
+                "place": "The Eiffel Tower Paris",
+                "rating": 4.6,
+                "avg-cost": "166,000",
+                "type": "Historical",
+                "desc": "The Eiffel Tower is inextricably linked to both France and the city of Paris, and attracted 5.9 million visitors in 2022. The 'Iron Lady' offers a unique view of the French capital standing at 324 metres tall. That 360° view allows you to admire the Pantheon, Montparnasse Tower, Montmartre, the Seine, and more.",
+                "Img": "./DestinationPhotos/EiffelTower.jpg",
+                "hotels": [
+                    {
+                        "place": "Pullman Paris Tour Eiffel",
+                        "Img": "./Hotel/France/PullmanParis.jpg",
+                        "rating": 4.4,
+                        "avg-cost": "26,000"
+                    },
+                    {
+                        "place": "Hotel Eiffel Seine",
+                        "Img": "./Hotel/France/EiffelSeine.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "11,000"
+                    },
+                    {
+                        "place": "Hôtel le Derby Alma by Inwood Hotels",
+                        "Img": "./Hotel/France/leDerbyAlma.jpg",
+                        "rating": 4.4,
+                        "avg-cost": "20,000"
+                    },
+                    {
+                        "place": "Hôtel de Varenne",
+                        "Img": "./Hotel/France/deVarenne.jpg",
+                        "rating": 4.4,
+                        "avg-cost": "15,000"
+                    },
+                    {
+                        "place": "Le Parisis - Paris Tour Eiffel",
+                        "Img": "./Hotel/France/LeParisis.jpg",
+                        "rating": 4.5,
+                        "avg-cost": "16,000"
+                    }
+                ]
+            },
+            {
+                "country": "France",
+                "place": "The Centre Pompidou",
+                "rating": 4.5,
+                "avg-cost": "61,000",
+                "type": "City",
+                "desc": "The National Museum of Modern Art welcomed 5.4 million French and foreign tourists in 2022. More than 100,000 works of art are spread across roughly 28,000 m2, attracting art enthusiasts every year. The Centre national d'art et de culture Georges Pompidou, or simply the Centre Pompidou, is constantly reinventing itself through retrospectives, such as the Germaine Richier exhibit, or by adding new forms of artistic creation, such as NFTs.",
+                "Img": "./DestinationPhotos/CentrePompidou.jpg",
+                "hotels": [
+                    {
+                        "place": "Novotel Paris Les Halles",
+                        "Img": "./Hotel/France/Novotel.jpg",
+                        "rating": 4.4,
+                        "avg-cost": "21,000"
+                    },
+                    {
+                        "place": "Hôtel Beaubourg",
+                        "Img": "./Hotel/France/Beaubourg.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "9,900"
+                    },
+                    {
+                        "place": "Hôtel Duo",
+                        "Img": "./Hotel/France/HôtelDuo.jpg",
+                        "rating": 4.3,
+                        "avg-cost": "15,000"
+                    },
+                    {
+                        "place": "Hotel Design Sorbonne",
+                        "Img": "./Hotel/France/DesignSorbonne.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "13,000"
+                    }
+                ]
+            },
+            {
+                "country": "Japan",
+                "place": "Tokyo",
+                "rating": 4.5,
+                "avg-cost": "39,000",
+                "type": "City",
+                "desc": "Tokyo, the capital, is by far one of the most popular travel destinations in Japan. There is so much to see and do, you could spend a week just exploring its city centers of Shinjuku, Shibuya, Ikebukuro, Ueno, and Ginza. Notable attractions include the electronics city of Akihabara, Tokyo Tower, Kaminarimon at Asakusa, and Tokyo Disneyland.",
+                "Img": "./DestinationPhotos/Tokyo.jpg",
+                "hotels": [
+                    {
+                        "place": "Hotel Sunroute Plaza Shinjuku",
+                        "Img": "./Hotel/Japan/SunroutePlaza.png",
+                        "rating": 4.1,
+                        "avg-cost": "9,000"
+                    },
+                    {
+                        "place": "Citadines Shinjuku Tokyo",
+                        "Img": "./Hotel/Japan/Citadines.jpg",
+                        "rating": 4.3,
+                        "avg-cost": "10,000"
+                    },
+                    {
+                        "place": "JR Kyushu Hotel Blossom Shinjuku",
+                        "Img": "./Hotel/Japan/KyushuHotel.png",
+                        "rating": 4.3,
+                        "avg-cost": "12,000"
+                    },
+                    {
+                        "place": "Park Hotel Tokyo",
+                        "Img": "./Hotel/Japan/ParkHotel.png",
+                        "rating": 4.4,
+                        "avg-cost": "15,000"
+                    }
+                ]
+            },
+            {
+                "country": "Japan",
+                "place": "Osaka",
+                "rating": 4.6,
+                "avg-cost": "55,000",
+                "type": "City",
+                "desc": "Osaka is the commercial center of Japan and famous for its unique culture and foods. Enjoy takoyaki (octopus balls) in the entertainment district of Dotonbori and stroll the shopping streets stretching from Namba to Shinsaibashi. Then head over to Osaka Castle Park for cherry blossom viewing in the spring or the tower to see views of Osaka.",
+                "Img": "./DestinationPhotos/Osaka.jpg",
+                "hotels": [
+                    {
+                        "place": "The Ritz-Carlton Osaka",
+                        "Img": "./Hotel/Japan/RitzCarlton.jpg",
+                        "rating": 4.4,
+                        "avg-cost": "15,000"
+                    },
+                    {
+                        "place": "Hearton Hotel Nishi Umeda",
+                        "Img": "./Hotel/Japan/Hearton.jpg",
+                        "rating": 3.9,
+                        "avg-cost": "8,000"
+                    },
+                    {
+                        "place": "Hotel Universal Port",
+                        "Img": "./Hotel/Japan/Universal.jpg",
+                        "rating": 4.4,
+                        "avg-cost": "12,000"
+                    },
+                    {
+                        "place": "Hotel Granvia Osaka",
+                        "Img": "./Hotel/Japan/GranviaOsaka.jpg",
+                        "rating": 4.1,
+                        "avg-cost": "9,000"
+                    },
+                    {
+                        "place": "Hotel Brighton City Osaka Kitahama",
+                        "Img": "./Hotel/Japan/BrightonCity.jpg",
+                        "rating": 4.0,
+                        "avg-cost": "5,000"
+                    }
+                ]
+            },
+            {
+                "country": "Japan",
+                "place": "Kyoto",
+                "rating": 4.4,
+                "avg-cost": "20,000",
+                "type": "Historical",
+                "desc": "Kyoto is a must for every visitor to Japan. The streets are lined with ancient temples and traditional architecture to enjoy in this cultural city. Points of interest include Kiyomizu-dera, Kinkaku-ji, Ginkaku-ji and the Gion entertainment district. Just 20 minutes south of Kyoto is Uji, famous for high-quality matcha green tea.",
+                "Img": "./DestinationPhotos/Kyoto.png",
+                "hotels": [
+                    {
+                        "place": "Citadines Kyoto Karasuma-Gojo",
+                        "Img": "./Hotel/Japan/KarasumaGojo.jpg",
+                        "rating": 4.5,
+                        "avg-cost": "8,000"
+                    },
+                    {
+                        "place": "APA Hotel Kyoto-eki Horikawa-Dori",
+                        "Img": "./Hotel/Japan/KarasumaGojo.jpg",
+                        "rating": 3.6,
+                        "avg-cost": "4,000"
+                    },
+                    {
+                        "place": "Solaria Nishitetsu Hotel Kyoto Premier",
+                        "Img": "./Hotel/Japan/SolariaNishitetsu.jpg",
+                        "rating": 4.7,
+                        "avg-cost": "12,000"
+                    },
+                    {
+                        "place": "Sakura Terrace",
+                        "Img": "./Hotel/Japan/SakuraTerrace.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "4,000"
+                    },
+                    {
+                        "place": "Kyoto Century Hotel",
+                        "Img": "./Hotel/Japan/KyotoCentury.png",
+                        "rating": 4.2,
+                        "avg-cost": "5,000"
+                    }
+                ]
+            },
+            {
+                "country": "Japan",
+                "place": "Nagoya",
+                "rating": 4.6,
+                "avg-cost": "23,000",
+                "type": "City",
+                "desc": "Nagoya is the fourth largest city and centrally located between Osaka and Tokyo. Attractions include the Toyota Commemorative Museum of Industry and Technology, Nagoya Castle, and the underground shopping walkways in Sakae.",
+                "Img": "./DestinationPhotos/Nagoya.jpg",
+                "hotels": [
+                    {
+                        "place": "Nagoya Marriott Associa Hotel",
+                        "Img": "./Hotel/Japan/NagoyaMarriott.jpg",
+                        "rating": 4.3,
+                        "avg-cost": "16,000"
+                    },
+                    {
+                        "place": "Nagoya JR Gate Tower Hotel",
+                        "Img": "./Hotel/Japan/NagoyaJRGate.png",
+                        "rating": 4.3,
+                        "avg-cost": "11,000"
+                    },
+                    {
+                        "place": "Grace Inn Nagoya",
+                        "Img": "./Hotel/Japan/GraceInn.jpg",
+                        "rating": 3.5,
+                        "avg-cost": "3,500"
+                    },
+                    {
+                        "place": "Sanco Inn Nagoya Shinkansen-guchi Annex",
+                        "Img": "./Hotel/Japan/SancoInnNagoya.jpg",
+                        "rating": 4.0,
+                        "avg-cost": "6,000"
+                    },
+                    {
+                        "place": "Hotel Wing International Nagoya",
+                        "Img": "./Hotel/Japan/HotelWing.jpg",
+                        "rating": 3.5,
+                        "avg-cost": "3,000"
+                    }
+                ]
+            },
+            {
+                "country": "Japan",
+                "place": "Hokkaido",
+                "rating": 4.8,
+                "avg-cost": "88,500",
+                "type": "Mountain",
+                "desc": "Hokkaido, the northernmost island, is a place to visit year round because of its cool summers and snowy winters offering ski resorts and hot springs. Sapporo, the capital of Hokkaido, hosts the annual Snow Festival in February. Other areas of interest include Niseko, Otaru and Hakodate.",
+                "Img": "./DestinationPhotos/Hokkaido.png",
+                "hotels": [
+                    {
+                        "place": "The Maples Niseko",
+                        "Img": "./Hotel/Japan/Maples.jpg",
+                        "rating": 4.3,
+                        "avg-cost": "25,000"
+                    },
+                    {
+                        "place": "La'gent Stay Sapporo Odori Hokkaido",
+                        "Img": "./Hotel/Japan/Sapporo.jpg",
+                        "rating": 4.3,
+                        "avg-cost": "19,000"
+                    },
+                    {
+                        "place": "Island Inn Rishiri",
+                        "Img": "./Hotel/Japan/Rishiri.jpg",
+                        "rating": 4.7,
+                        "avg-cost": "35,000"
+                    }
+                ]
+            },
+            {
+                "country": "USA",
+                "place": "New York",
+                "rating": 4.7,
+                "avg-cost": "69,000",
+                "type": "City",
+                "desc": "NEW YORK CITY An iconic global centre that has inspired the world with its brilliant architecture, movies, and art. Also known as the Big Apple, New York is well-known for its magnificent skyscrapers, Broadway shows and beautiful landmarks, making it the perfect destination for travellers from all over.",
+                "Img": "./DestinationPhotos/NewYork.jpg",
+                "hotels": [
+                    {
+                        "place": "New York Hilton Midtown",
+                        "Img": "./Hotel/USA/HiltonMidtown.png",
+                        "rating": 4.1,
+                        "avg-cost": "19,000"
+                    },
+                    {
+                        "place": "W New York - Times Square",
+                        "Img": "./Hotel/USA/WNewYork.png",
+                        "rating": 4.3,
+                        "avg-cost": "16,000"
+                    },
+                    {
+                        "place": "The New Yorker A Wyndham Hotel",
+                        "Img": "./Hotel/USA/Wyndham.jpg",
+                        "rating": 3.9,
+                        "avg-cost": "11,000"
+                    },
+                    {
+                        "place": "casablanca hotel",
+                        "Img": "./Hotel/USA/casablanca.jpg",
+                        "rating": 4.7,
+                        "avg-cost": "23,000"
+                    },
+                    {
+                        "place": "New York Marriott Marquis",
+                        "Img": "./Hotel/USA/MarriottMarquis.jpg",
+                        "rating": 4.4,
+                        "avg-cost": "20,000"
+                    }
+                ]
+            },
+            {
+                "country": "USA",
+                "place": "las vegas",
+                "rating": 4.5,
+                "avg-cost": "78,000",
+                "type": "City",
+                "desc": "Las Vegas a place that brings neon signboards, iconic hotels and the legendary casinos to our minds. For the ultimate, no-limits entertainment trip, there is hardly any place in the world that comes close to Vegas.",
+                "Img": "./DestinationPhotos/lasVegas.jpg",
+                "hotels": [
+                    {
+                        "place": "Caesars Palace",
+                        "Img": "./Hotel/USA/Caesars.jpg",
+                        "rating": 4.5,
+                        "avg-cost": "18,000"
+                    },
+                    {
+                        "place": "Mandalay Bay",
+                        "Img": "./Hotel/USA/Mandalay.jpg",
+                        "rating": 4.4,
+                        "avg-cost": "14,000"
+                    },
+                    {
+                        "place": "ARIA Resort & Casino",
+                        "Img": "./Hotel/USA/ARIA.jpg",
+                        "rating": 4.5,
+                        "avg-cost": "21,000"
+                    },
+                    {
+                        "place": "Hard Rock Hotel & Casino Las Vegas",
+                        "Img": "./Hotel/USA/HardRock.jpg",
+                        "rating": 3.8,
+                        "avg-cost": "11,000"
+                    },
+                    {
+                        "place": "The Venetian Las Vegas",
+                        "Img": "./Hotel/USA/Venetian.jpg",
+                        "rating": 4.7,
+                        "avg-cost": "28,000"
+                    }
+                ]
+            },
+            {
+                "country": "USA",
+                "place": "Los Angeles",
+                "rating": 4.6,
+                "avg-cost": "54,000",
+                "type": "City",
+                "desc": "Los Angeles is the hub of all activities on the famous West Coast of the United States. It is the second-largest city in the country, and one of the US's prime tourist cities. Home to the world-famous Hollywood entertainment industry, Los Angeles has become a huge tourist destination.",
+                "Img": "./DestinationPhotos/LosAngeles.jpg",
+                "hotels": [
+                    {
+                        "place": "Freehand Los Angeles",
+                        "Img": "./Hotel/USA/Freehand.jpg",
+                        "rating": 4.1,
+                        "avg-cost": "13,000"
+                    },
+                    {
+                        "place": "JW Marriott Los Angeles L.A. LIVE",
+                        "Img": "./Hotel/USA/JWMarriott.jpg",
+                        "rating": 4.5,
+                        "avg-cost": "27,000"
+                    },
+                    {
+                        "place": "Omni Los Angeles Hotel at California Plaza",
+                        "Img": "./Hotel/USA/Omni.png",
+                        "rating": 4.4,
+                        "avg-cost": "20,500"
+                    },
+                    {
+                        "place": "The Garland",
+                        "Img": "./Hotel/USA/Garland.jpg",
+                        "rating": 4.4,
+                        "avg-cost": "22,000"
+                    },
+                    {
+                        "place": "Holiday Inn Express & Suites Hollywood Walk of Fame, an IHG Hotel",
+                        "Img": "./Hotel/USA/IHGHotel.jpg",
+                        "rating": 4.1,
+                        "avg-cost": "18,000"
+                    }
+                ]
+            },
+            {
+                "country": "USA",
+                "place": "San Francisco",
+                "rating": 4.4,
+                "avg-cost": "57,000",
+                "type": "City",
+                "desc": "San Francisco is one of the most important cities on the West Coast and all of the United States. It has been a major tourist destination since the 1960s, thanks to its wide array of attractions, the iconic Golden Gate Bridge fantastic views of the San Francisco Bay and brilliant summer weather.",
+                "Img": "./DestinationPhotos/SanFrancisco.png",
+                "hotels": [
+                    {
+                        "place": "Hilton San Francisco Financial District",
+                        "Img": "./Hotel/USA/HiltonSanFrancisco.jpg",
+                        "rating": 3.9,
+                        "avg-cost": "9,000"
+                    },
+                    {
+                        "place": "Hotel Union Square",
+                        "Img": "./Hotel/USA/UnionSquare.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "12,000"
+                    },
+                    {
+                        "place": "San Francisco Marriott Marquis",
+                        "Img": "./Hotel/USA/Marriott.png",
+                        "rating": 4.4,
+                        "avg-cost": "20,000"
+                    },
+                    {
+                        "place": "Hotel Zoe Fisherman's Wharf",
+                        "Img": "./Hotel/USA/ZoeFisherman.jpg",
+                        "rating": 4.2,
+                        "avg-cost": "17,500"
+                    },
+                    {
+                        "place": "Huntington Hotel",
+                        "Img": "./Hotel/USA/Huntington.jpg",
+                        "rating": 4.5,
+                        "avg-cost": "25,000"
+                    }
+                ]
+            },
+            {
+                "country": "USA",
+                "place": "San Diego",
+                "rating": 4.6,
+                "avg-cost": "102,000",
+                "type": "City",
+                "desc": "San Diego Tourism Home to serene white-sand beaches, San Diego is popularly called 'America's Finest City'. San Diego is the second-largest city in California, while it ranks no. 8 in the list of the largest cities in the United States. With incredible weather conditions throughout the year and over 60 beaches, the sunny and warm San Diego is perfect to travel to throughout the year.",
+                "Img": "./DestinationPhotos/SanDiego.png",
+                "hotels": [
+                    {
+                        "place": "Hard Rock Hotel San Diego",
+                        "Img": "./Hotel/USA/RockHotelSanDiego.jpg",
+                        "rating": 4.3,
+                        "avg-cost": "22,000"
+                    },
+                    {
+                        "place": "Bahia Resort Hotel",
+                        "Img": "./Hotel/USA/Bahia.jpg",
+                        "rating": 3.9,
+                        "avg-cost": "14,000"
+                    },
+                    {
+                        "place": "Manchester Grand Hyatt San Diego",
+                        "Img": "./Hotel/USA/Manchester.png",
+                        "rating": 4.6,
+                        "avg-cost": "31,000"
+                    },
+                    {
+                        "place": "THE US GRANT, a Luxury Collection Hotel, San Diego",
+                        "Img": "./Hotel/USA/USGRANT.jpg",
+                        "rating": 4.6,
+                        "avg-cost": "40,000"
+                    },
+                    {
+                        "place": "Paradise Point Resort & Spa",
+                        "Img": "./Hotel/USA/Paradise.jpg",
+                        "rating": 4.3,
+                        "avg-cost": "22,000"
+                    }
+                ]
+            }
+        ]
+    },
+    "ChooseUs": {
+        "title": "Why Should You Choose Us",
+        "subTitle": "We have extensive knowledge and experience in the travel industry.",
+        "chooseUsImg1": "./ChooseUsImages/SunSet1.jpg",
+        "chooseUsImg2": "./ChooseUsImages/SunSet2.jpg",
+        "safety": [
+            {
+                "safetyImg": "",
+                "safetyTitle": "Safety and support",
+                "safetyTitleInfo": "Our top priority is the safety and well-being of our clients. We maintain high safety standards and have emergency support available during the trip. Our travel agency prioritizes your safety by partnering with trusted accommodations and transportation providers."
+            },
+            {
+                "safetyImg": "./ChooseUsImages/DiverseRange.png",
+                "safetyTitle": "Diverse Range of Destinations",
+                "safetyTitleInfo": "Whether it's a domestic tour or an international adventure, we cover a wide range of destinations to cater to different interests and proferences. Explore a diverse range of breathtaking destinations with our travel agency. Embark on unforgettable adventures with us."
+            },
+            {
+                "safetyImg": "./ChooseUsImages/CustomerSupport.png",
+                "safetyTitle": "24/7 Customer Support",
+                "safetyTitleInfo": "Our dedicated customer support team is available round the clock to address any queries or concerns before during and after the trip. We ensuring a worry-free travel experience."
+            }
+        ]
+    },
+    "ClientReview": [
+        {
+            "name": "Devale",
+            "review": "I recently went on a trip, and I must say it was an impressive experience. Their knowledgeable staff, hassle-free booking process, and well-curated itinerary exceeded my expectations.",
+            "stars": 5,
+            "email": "Devale@gmail.com",
+            "profileImg": "./ClientProfiles/Devale.png",
+            "groupImg": "./ClientReview/Devale.png"
+        },
+        {
+            "name": "Andi",
+            "review": "Very easy to book and price promise was successful and altered invoice immediately.Very Efficient.",
+            "stars": 4,
+            "email": "Andi@gmail.com",
+            "profileImg": "./ClientProfiles/Andi.png",
+            "groupImg": "./ClientReview/Andi.jpg"
+        },
+        {
+            "name": "Stanzy",
+            "review": "Very competitively priced, easy to use website and everything we were looking for.",
+            "stars": 5,
+            "email": "Stanzy@gmail.com",
+            "profileImg": "./ClientProfiles/Stanzy.jpg",
+            "groupImg": "./ClientReview/Stanzy.jpg"
+        },
+        {
+            "name": "Prince",
+            "review": "Absolutely fantastic experience with thhis agency! Their attention to detail made our trip seamless and unforgettable. Highly recommended!!",
+            "stars": 5,
+            "email": "Prince@gmail.com",
+            "profileImg": "./ClientProfiles/Prince.jpg",
+            "groupImg": "./ClientReview/Prince.jpg"
+        },
+        {
+            "name": "Kito",
+            "review": "The team went above and beyond to accommodate our preferences and create a tailor-made itinerary. A five-star service!",
+            "stars": 4,
+            "email": "Kito@gmail.com",
+            "profileImg": "./ClientProfiles/Kito.png",
+            "groupImg": "./ClientReview/Kito.jpg"
+        },
+        {
+            "name": "Manoj",
+            "review": "I've traveled extensively, and this agency stands out for their exceptional customer service and expertise. They turned our trip into a dream vacation!",
+            "stars": 5,
+            "email": "Manoj@gmail.com",
+            "profileImg": "./ClientProfiles/Manoj.png",
+            "groupImg": "./ClientReview/Manoj.jpg"
+        },
+        {
+            "name": "Srinivas",
+            "review": "From start to finish, working with EXPLORE was a pleasure. Professional, knowledgeable and dedicated to making our trip perfect.",
+            "stars": 4,
+            "email": "Srinivas@gmail.com",
+            "profileImg": "./ClientProfiles/Srinivas.jpg",
+            "groupImg": "./ClientReview/Srinivas.jpg"
+        },
+        {
+            "name": "Vishwas",
+            "review": "Impressive knowledge of destinations and a keen understanding of what travellers want. Thanks to them, our trip exceeded all expectations!!",
+            "stars": 5,
+            "email": "Vishwas@gmail.com",
+            "profileImg": "./ClientProfiles/Vishwas.jpg",
+            "groupImg": "./ClientReview/Vishwas.jpg"
+        },
+        {
+            "name": "Raju",
+            "review": "Thier personalized approach and willingness to cater to our needs made our vacation unforgettable. We'll definitely be booking through them again!!",
+            "stars": 5,
+            "email": "Raju@gmail.com",
+            "profileImg": "./ClientProfiles/Raju.png",
+            "groupImg": "./ClientReview/Raju.jpg"
+        },
+        {
+            "name": "Veena",
+            "review": "Kudos to the team for their prompt responses and meticulous planning. Our trip was seamless and we felt incredibly well taken care of.",
+            "stars": 4,
+            "email": "Veena@gmail.com",
+            "profileImg": "./ClientProfiles/Veena.jpg",
+            "groupImg": "./ClientReview/Veena.jpg"
+        },
+        {
+            "name": "Rajesh",
+            "review": "A big thank you to EXPLORE for making our trip stress-free and memorable. Thier recommendations were spot on!",
+            "stars": 5,
+            "email": "Rajesh@gmail.com",
+            "profileImg": "./ClientProfiles/Rajesh.jpg",
+            "groupImg": "./ClientReview/Rajesh.jpg"
+        },
+        {
+            "name": "Ganesh",
+            "review": "Highly impressed by the attention to detail and the effort put into ensuring everything went smoothly. I can't recommend them enough!",
+            "stars": 5,
+            "email": "Ganesh@gmail.com",
+            "profileImg": "./ClientProfiles/Ganesh.jpg",
+            "groupImg": "./ClientReview/Ganesh.jpg"
+        },
+        {
+            "name": "Vidya",
+            "review": "Exceptional service from a team that truly cares about their clients. We had an amazing trip to Europe thanks to their expertize and dedication.",
+            "stars": 4,
+            "email": "Vidya@gmail.com",
+            "profileImg": "./ClientProfiles/Vidya.jpg",
+            "groupImg": "./ClientReview/Vidya.png"
+        },
+        {
+            "name": "Priyanka",
+            "review": "The booking process was smooth, but it would be great to have more user-friendly interface for selecting custom preferences online.",
+            "stars": 3,
+            "email": "Priyanka@gmail.com",
+            "profileImg": "./ClientProfiles/Priyanka.jpg",
+            "groupImg": "./ClientReview/Priyanka.jpg"
+        },
+        {
+            "name": "Anusha",
+            "review": "The trip was enjoyable, yet providing a mobile app or online platform for easy access to travel documents and real-time updates would be convenient.",
+            "stars": 3,
+            "email": "Anusha@gmail.com",
+            "profileImg": "./ClientProfiles/Anusha.jpg",
+            "groupImg": "./ClientReview/Anusha.png"
+        },
+        {
+            "name": "Charu",
+            "review": "Though the customer service was good, having extended support hours or a dedicated emergency contact during travel could benhance peace of mind.",
+            "stars": 3,
+            "email": "Charu@gmail.com",
+            "profileImg": "./ClientProfiles/Charu.jpg",
+            "groupImg": "./ClientReview/Charu.jpg"
+        }
+    ],
+    "ContactUs": {
+        "Title": "Contact Us!",
+        "title-info": "Please fill and submit the form for any Querry our customer support team will connect with you within 24hrs."
+    },
+    "Portfolio": {
+        "Personal-Details": {
+            "Name": "Karthik D",
+            "Img": "./Profile/myprofile.jpg",
+            "Role": "System Engineer",
+            "Designation": "(UI, React Developer)",
+            "Mobile-No": "+91 9742534213",
+            "Address": "Ganesh Colony, Ballari",
+            "Gmail": "karthikdevale@gmail.com",
+            "LinkedIn-Name": "Karthik D@linkedin.com",
+            "LinkedIn-Link": "https://www.linkedin.com/in/karthik-d-192285190"
+        },
+        "Career Objective": [
+            "I'm a motivated Front-End Web-Developer with 2 years of experience in IT industry. Proficient in HTML, CSS, JavaScript, Bootstrap, MUI, RWD (Responsive web design), and with knowledge of cutting-edge technologies like REACT-JS. Seeking a challenging position to utilize my skills in developing interactive, user-friendly websites. Committed to staying current and with modern web technologies and trends to deliver innovative solutions to meet client needs."
+        ],
+        "Skills": [
+            "HTML",
+            "CSS & SCSS",
+            "Javascript + ES6 (Advanced JS)",
+            "React-JS",
+            "Bootstrap",
+            "MUI (Material UI)",
+            "RWD (Responsive Web Design)",
+            "Tools Used : Vscode, Git & GitHub, BitBucket, Zira"
+        ],
+        "Experience": {
+            "Company": "Infosys",
+            "Years": "2 Years",
+            "Desc": [
+                "Working in Infosys Ltd, Bangalore as a UI developer since march 2022.",
+                "In my current Project working as a React Developer (UI Developer) where we have built a completely user-friendly website by working with a team of 10 developers. And this website is completely responsive as it can be access from Desktop/Tab/Mobile, with proper alignment of the design in which user is viewing."
+            ]
+        },
+        "Projects": {
+            "Website": {
+                "Title": "Website",
+                "Name": "EXPLORE",
+                "Link": "https://explore-bykd.netlify.app/"
+            },
+            "Website-Desc": {
+                "Desc-Title": "Description",
+                "Desc": [
+                    "This website is a travel website where people can book their favourite destinations and nearby hotels to their destinations.",
+                    "This website is a user-friendly and it's completely a responsive website where user can access from Desktop/Tab/Mobile, with proper alignment of the design in which user is viewing.",
+                    "This website contains Dynamic Coding completely where the data is coming in the form of JSON format. If in case we have to add or delete data we can do it easily no need to alter the codes just change in JSON and everything will be done according.",
+                    "In this website I have majorly taken care of DRC (Don't repeat code) process, Re-Useable components and code optimisation. So that we can reuse the common components and reduce the size of the website."
+                ]
+            }
+        },
+        "Languages": [
+            "English",
+            "Kannada",
+            "Hindi",
+            "Telugu",
+            "Marati"
+        ],
+        "Education": {
+            "College": "MS Ramaiah Institute Of Technology",
+            "Branch": "Civil Engineering",
+            "CGPA": "8.34",
+            "Location": "Bangalore"
+        },
+        "Certification": [
+            "Infosys Certified Front End Web Developer",
+            "Infosys Certified React Associate"
+        ]
+    },
+    "PhoneNoValidation": [
+        {
+            "country": "China",
+            "numberLength": "13"
+        },
+        {
+            "country": "Mozambique",
+            "numberLength": "12"
+        },
+        {
+            "country": "Brazil",
+            "numberLength": "11"
+        },
+        {
+            "country": "India",
+            "numberLength": "10"
+        },
+        {
+            "country": "United States",
+            "numberLength": "10"
+        },
+        {
+            "country": "Pakistan",
+            "numberLength": "10"
+        },
+        {
+            "country": "Bangladesh",
+            "numberLength": "10"
+        },
+        {
+            "country": "Russia",
+            "numberLength": "10"
+        },
+        {
+            "country": "Mexico",
+            "numberLength": "10"
+        },
+        {
+            "country": "Japan",
+            "numberLength": "10"
+        },
+        {
+            "country": "Philippines",
+            "numberLength": "10"
+        },
+        {
+            "country": "Egypt",
+            "numberLength": "10"
+        },
+        {
+            "country": "Iran",
+            "numberLength": "10"
+        },
+        {
+            "country": "Turkey",
+            "numberLength": "10"
+        },
+        {
+            "country": "Germany",
+            "numberLength": "10"
+        },
+        {
+            "country": "United Kingdom",
+            "numberLength": "10"
+        },
+        {
+            "country": "Italy",
+            "numberLength": "10"
+        },
+        {
+            "country": "Kenya",
+            "numberLength": "10"
+        },
+        {
+            "country": "Colombia",
+            "numberLength": "10"
+        },
+        {
+            "country": "South Korea",
+            "numberLength": "10"
+        },
+        {
+            "country": "Canada",
+            "numberLength": "10"
+        },
+        {
+            "country": "Nepal",
+            "numberLength": "10"
+        },
+        {
+            "country": "Kazakhstan",
+            "numberLength": "10"
+        },
+        {
+            "country": "Romania",
+            "numberLength": "10"
+        },
+        {
+            "country": "Dominican Republic",
+            "numberLength": "10"
+        },
+        {
+            "country": "Greece",
+            "numberLength": "10"
+        },
+        {
+            "country": "Austria",
+            "numberLength": "10"
+        },
+        {
+            "country": "Libya",
+            "numberLength": "10"
+        },
+        {
+            "country": "Puerto Rico",
+            "numberLength": "10"
+        },
+        {
+            "country": "Jamaica",
+            "numberLength": "10"
+        },
+        {
+            "country": "Trinidad and Tobago",
+            "numberLength": "10"
+        },
+        {
+            "country": "Bahamas",
+            "numberLength": "10"
+        },
+        {
+            "country": "Barbados",
+            "numberLength": "10"
+        },
+        {
+            "country": "Saint Lucia",
+            "numberLength": "10"
+        },
+        {
+            "country": "Guam",
+            "numberLength": "10"
+        },
+        {
+            "country": "Grenada",
+            "numberLength": "10"
+        },
+        {
+            "country": "Saint Vincent and the Grenadines",
+            "numberLength": "10"
+        },
+        {
+            "country": "United States Virgin Islands",
+            "numberLength": "10"
+        },
+        {
+            "country": "Antigua and Barbuda",
+            "numberLength": "10"
+        },
+        {
+            "country": "Isle of Man",
+            "numberLength": "10"
+        },
+        {
+            "country": "Dominica",
+            "numberLength": "10"
+        },
+        {
+            "country": "Cayman Islands",
+            "numberLength": "10"
+        },
+        {
+            "country": "Bermuda",
+            "numberLength": "10"
+        },
+        {
+            "country": "Guernsey",
+            "numberLength": "10"
+        },
+        {
+            "country": "Northern Mariana Islands",
+            "numberLength": "10"
+        },
+        {
+            "country": "Saint Kitts and Nevis",
+            "numberLength": "10"
+        },
+        {
+            "country": "Turks and Caicos Islands",
+            "numberLength": "10"
+        },
+        {
+            "country": "Sint Maarten",
+            "numberLength": "10"
+        },
+        {
+            "country": "American Samoa",
+            "numberLength": "10"
+        },
+        {
+            "country": "British Virgin Islands",
+            "numberLength": "10"
+        },
+        {
+            "country": "Anguilla",
+            "numberLength": "10"
+        },
+        {
+            "country": "Montserrat",
+            "numberLength": "10"
+        },
+        {
+            "country": "Vatican City",
+            "numberLength": "10"
+        },
+        {
+            "country": "Indonesia",
+            "numberLength": "9"
+        },
+        {
+            "country": "Vietnam",
+            "numberLength": "9"
+        },
+        {
+            "country": "Thailand",
+            "numberLength": "9"
+        },
+        {
+            "country": "South Africa",
+            "numberLength": "9"
+        },
+        {
+            "country": "Spain",
+            "numberLength": "9"
+        },
+        {
+            "country": "Algeria",
+            "numberLength": "9"
+        },
+        {
+            "country": "Afghanistan",
+            "numberLength": "9"
+        },
+        {
+            "country": "Poland",
+            "numberLength": "9"
+        },
+        {
+            "country": "Ukraine",
+            "numberLength": "9"
+        },
+        {
+            "country": "Saudi Arabia",
+            "numberLength": "9"
+        },
+        {
+            "country": "Yemen",
+            "numberLength": "9"
+        },
+        {
+            "country": "Ghana",
+            "numberLength": "9"
+        },
+        {
+            "country": "Peru",
+            "numberLength": "9"
+        },
+        {
+            "country": "Cameroon",
+            "numberLength": "9"
+        },
+        {
+            "country": "Australia",
+            "numberLength": "9"
+        },
+        {
+            "country": "Syria",
+            "numberLength": "9"
+        },
+        {
+            "country": "Taiwan",
+            "numberLength": "9"
+        },
+        {
+            "country": "Zambia",
+            "numberLength": "9"
+        },
+        {
+            "country": "Chile",
+            "numberLength": "9"
+        },
+        {
+            "country": "Ecuador",
+            "numberLength": "9"
+        },
+        {
+            "country": "Netherlands",
+            "numberLength": "9"
+        },
+        {
+            "country": "Cambodia",
+            "numberLength": "9"
+        },
+        {
+            "country": "Zimbabwe",
+            "numberLength": "9"
+        },
+        {
+            "country": "Benin",
+            "numberLength": "9"
+        },
+        {
+            "country": "Belgium",
+            "numberLength": "9"
+        },
+        {
+            "country": "Jordan",
+            "numberLength": "9"
+        },
+        {
+            "country": "Czech Republic",
+            "numberLength": "9"
+        },
+        {
+            "country": "Azerbaijan",
+            "numberLength": "9"
+        },
+        {
+            "country": "Portugal",
+            "numberLength": "9"
+        },
+        {
+            "country": "Hungary",
+            "numberLength": "9"
+        },
+        {
+            "country": "United Arab Emirates",
+            "numberLength": "9"
+        },
+        {
+            "country": "Belarus",
+            "numberLength": "9"
+        },
+        {
+            "country": "Israel",
+            "numberLength": "9"
+        },
+        {
+            "country": "Switzerland",
+            "numberLength": "9"
+        },
+        {
+            "country": "Paraguay",
+            "numberLength": "9"
+        },
+        {
+            "country": "Slovakia",
+            "numberLength": "9"
+        },
+        {
+            "country": "New Zealand",
+            "numberLength": "9"
+        },
+        {
+            "country": "Ireland",
+            "numberLength": "9"
+        },
+        {
+            "country": "Croatia",
+            "numberLength": "9"
+        },
+        {
+            "country": "Georgia",
+            "numberLength": "9"
+        },
+        {
+            "country": "Luxembourg",
+            "numberLength": "9"
+        },
+        {
+            "country": "Guadeloupe",
+            "numberLength": "9"
+        },
+        {
+            "country": "Martinique",
+            "numberLength": "9"
+        },
+        {
+            "country": "French Guiana",
+            "numberLength": "9"
+        },
+        {
+            "country": "Nigeria",
+            "numberLength": "8"
+        },
+        {
+            "country": "Myanmar",
+            "numberLength": "8"
+        },
+        {
+            "country": "Niger",
+            "numberLength": "8"
+        },
+        {
+            "country": "Mali",
+            "numberLength": "8"
+        },
+        {
+            "country": "Burkina Faso",
+            "numberLength": "8"
+        },
+        {
+            "country": "Chad",
+            "numberLength": "8"
+        },
+        {
+            "country": "Somalia",
+            "numberLength": "8"
+        },
+        {
+            "country": "Guatemala",
+            "numberLength": "8"
+        },
+        {
+            "country": "Tunisia",
+            "numberLength": "8"
+        },
+        {
+            "country": "Honduras",
+            "numberLength": "8"
+        },
+        {
+            "country": "Togo",
+            "numberLength": "8"
+        },
+        {
+            "country": "Hong Kong",
+            "numberLength": "8"
+        },
+        {
+            "country": "Nicaragua",
+            "numberLength": "8"
+        },
+        {
+            "country": "Serbia",
+            "numberLength": "8"
+        },
+        {
+            "country": "El Salvador",
+            "numberLength": "8"
+        },
+        {
+            "country": "Singapore",
+            "numberLength": "8"
+        },
+        {
+            "country": "Denmark",
+            "numberLength": "8"
+        },
+        {
+            "country": "Norway",
+            "numberLength": "8"
+        },
+        {
+            "country": "Costa Rica",
+            "numberLength": "8"
+        },
+        {
+            "country": "Oman",
+            "numberLength": "8"
+        },
+        {
+            "country": "Panama",
+            "numberLength": "8"
+        },
+        {
+            "country": "Kuwait",
+            "numberLength": "8"
+        },
+        {
+            "country": "Moldova",
+            "numberLength": "8"
+        },
+        {
+            "country": "Bosnia and Herzegovina",
+            "numberLength": "8"
+        },
+        {
+            "country": "Armenia",
+            "numberLength": "8"
+        },
+        {
+            "country": "Qatar",
+            "numberLength": "8"
+        },
+        {
+            "country": "Lithuania",
+            "numberLength": "8"
+        },
+        {
+            "country": "North Macedonia",
+            "numberLength": "8"
+        },
+        {
+            "country": "Latvia",
+            "numberLength": "8"
+        },
+        {
+            "country": "Bahrain",
+            "numberLength": "8"
+        },
+        {
+            "country": "Estonia",
+            "numberLength": "8"
+        },
+        {
+            "country": "Mauritius",
+            "numberLength": "8"
+        },
+        {
+            "country": "Cyprus",
+            "numberLength": "8"
+        },
+        {
+            "country": "Montenegro",
+            "numberLength": "8"
+        },
+        {
+            "country": "Malta",
+            "numberLength": "8"
+        },
+        {
+            "country": "Kiribati",
+            "numberLength": "8"
+        },
+        {
+            "country": "Malaysia",
+            "numberLength": "7"
+        },
+        {
+            "country": "Venezuela",
+            "numberLength": "7"
+        },
+        {
+            "country": "Sri Lanka",
+            "numberLength": "7"
+        },
+        {
+            "country": "Sweden",
+            "numberLength": "7"
+        },
+        {
+            "country": "Liberia",
+            "numberLength": "7"
+        },
+        {
+            "country": "Lebanon",
+            "numberLength": "7"
+        },
+        {
+            "country": "Gabon",
+            "numberLength": "7"
+        },
+        {
+            "country": "Solomon Islands",
+            "numberLength": "7"
+        },
+        {
+            "country": "Maldives",
+            "numberLength": "7"
+        },
+        {
+            "country": "Belize",
+            "numberLength": "7"
+        },
+        {
+            "country": "Micronesia",
+            "numberLength": "7"
+        },
+        {
+            "country": "Aruba",
+            "numberLength": "7"
+        },
+        {
+            "country": "Marshall Islands",
+            "numberLength": "7"
+        },
+        {
+            "country": "Palau",
+            "numberLength": "7"
+        },
+        {
+            "country": "Tanzania",
+            "numberLength": "6"
+        },
+        {
+            "country": "French Polynesia",
+            "numberLength": "6"
+        },
+        {
+            "country": "New Caledonia",
+            "numberLength": "6"
+        },
+        {
+            "country": "Greenland",
+            "numberLength": "6"
+        },
+        {
+            "country": "Samoa",
+            "numberLength": "5"
+        },
+        {
+            "country": "Faroe Islands",
+            "numberLength": "5"
+        },
+        {
+            "country": "Cook Islands",
+            "numberLength": "5"
+        },
+        {
+            "country": "Niue",
+            "numberLength": "4"
+        }
+    ],
+    "Footer": {
+        "footer-info": "This Travel website will provide you the best deals to travel your dream destination. We also offer you the safe and best hotels for reasonable price."
+    },
+    "LabelData": {
+        "search": "Search",
+        "moreDetails": "More Details",
+        "viewLess": "View Less",
+        "viewMore": "View More",
+        "readMore": "Read More",
+        "readLess": "Read Less",
+        "submit": "Submit",
+        "varifyDetails": "Varify Details",
+        "keepConnected": "Keep Connected",
+        "subscribe": "SUBSCRIBE",
+        "subscriptionSuccessful": "Subscription Successful",
+        "contactInfo": "Contact Info",
+        "specialOffers": "Special Offers",
+        "flat": "FLAT",
+        "onOnlineBooking": "On Online Booking",
+        "searchHotels": "Search Hotels",
+        "searchAllHotelsAvaliable": "Search All Hotels Avaliable",
+        "searchHotelsnearBookedDestination": "Search Hotels near Booked Destination",
+        "name": "Name",
+        "emailID": "Email ID",
+        "password": "Password",
+        "signIn": "Sign In",
+        "signOut": "Sign Out",
+        "admin": "Admin",
+        "register": "Register",
+        "verify": "Verify",
+        "price": "Price",
+        "tripDetails": "Trip Details",
+        "hotelDetails": "Hotel Details",
+        "clientDetails": "Client Details",
+        "formoredetailspleasefilltheform": "For more details please fill the form",
+        "form": "Forms",
+        "pleaseEnterAll": "Please Enter All",
+        "formisvarified": "Form is varified",
+        "backtoDetails": "Back to Details",
+        "verifyForms": "Verify Forms",
+        "bookNow": "Book Now",
+        "thankyou": "Thank you!",
+        "thankyouInfo": "Our Customer Support team will connect with you in next 24hrs.",
+        "note": "Note",
+        "noteInfo": "We give much important to customers safety and comfort so we offer our customer best hotels of there own choice.",
+        "visitHotels": "So please visit our special offers block to book the Hotels.",
+        "bookHotel": "Book Hotel",
+        "selectNote": "Please Click or Hover on Cards for More Details"
+    },
+    "PlaceHolderLabel": {
+        "name": "Enter Name",
+        "email": "Enter Email Id",
+        "mobileNo": "Enter Mobile No",
+        "message": "Message",
+        "selectCountry": "Select Country...",
+        "dateTravel": "Date of Travel",
+        "totalMembers": "Total Members",
+        "roomsRequired": "Rooms Required",
+        "specificRequirement": "Specific Requirement",
+        "optional": "(Optional)"
+    },
+    "ErrorLabel": {
+        "name": "Please Enter Your Name",
+        "enterEmail": "Please Enter Email Id",
+        "email": "Please Enter Valid Email ID",
+        "invalidEmail": "Invalid Email",
+        "mobileNo": "Please Enter Your Number",
+        "verifyMobileNo": "Select Country to varify Mobile number",
+        "invalidMobileNo": "Invalid Number",
+        "enterPassword": "Enter Password",
+        "weekPassword": "Week Password",
+        "selectCountry": "Please Select Your Country",
+        "enterDate": "Please Enter Date of Trip",
+        "expiredDate": "Date is Expired",
+        "members": "Please Enter Total Members",
+        "rooms": "Please Enter Rooms Required"
+    }
+}

@@ -1,0 +1,245 @@
+.destination {
+    .destination-title {
+        font-size: 3.125rem;
+        margin: 0;
+        font-weight: 600;
+        line-height: 3.75rem;
+
+        @media (max-width: $mobile) {
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    .destination-subTitle {
+        font-size: 1.875rem;
+        margin-bottom: 0.625rem;
+
+        @media (max-width: $mobile) {
+            font-size: 1.125rem;
+        }
+    }
+
+    .destination-search {
+        text-align: start;
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+        margin-top: 1.875rem;
+
+        @media (max-width: $mobile) {
+            margin-top: 1.25rem;
+        }
+
+        .css-b62m3t-container,
+        .css-3iigni-container {
+            width: 50%;
+            height: 1.875rem;
+
+            @media (max-width: $tabs) {
+                width: 90%;
+            }
+
+            @media (max-width: $mobile) {
+                width: 100%;
+            }
+        }
+
+        .css-13cymwt-control,
+        .css-t3ipsp-control,
+        .css-16xfy0z-control,
+        .css-1n6sfyn-MenuList {
+            border-radius: 0.625rem;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .css-tr4s17-option,
+        .css-d7l1ni-option {
+            cursor: pointer;
+        }
+
+        .css-1u9des2-indicatorSeparator {
+            width: 0;
+        }
+
+        .css-1nmdiq5-menu {
+            margin-top: 0.9375rem;
+            border-radius: 0.625rem;
+            z-index: 10;
+        }
+
+        .destination-searchBtn {
+            width: 20%;
+            min-width: 13.625rem;
+            height: 2.375rem;
+            border-radius: 0.625rem;
+            background: orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border: 0.0625rem solid lightgrey;
+            font-size: 1.125rem;
+
+            &:hover {
+                border: 0.0625rem solid hsl(0, 0%, 70%);
+            }
+
+            @media (max-width: $tabs) {
+                min-width: 15.625rem;
+            }
+        }
+
+        .destination-disabledBtn {
+            background: lightgray;
+            color: rgb(151, 140, 140);
+
+            &:hover {
+                border: none;
+                cursor: default;
+            }
+        }
+    }
+
+    .destination-navbar {
+        display: flex;
+        justify-content: start;
+        margin: 1.25rem 0rem 0.625rem;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+
+        @media (max-width: $tabs) {
+            justify-content: space-around;
+            gap: 0.3125rem;
+            margin: 0.9375rem;
+            margin-bottom: 0.3125rem;
+        }
+
+        .destination-navbarBtn {
+            display: flex;
+            justify-content: center;
+            border: 0.125rem solid transparent;
+            background: transparent;
+            padding: 0.4375rem;
+            border-radius: 3.125rem;
+            min-width: 4.375rem;
+            font-size: 0.9375rem;
+            cursor: pointer;
+
+            &:hover {
+                border: 0.125rem solid orange;
+            }
+
+            &:focus {
+                background-color: orange;
+                color: white;
+            }
+
+            @media (max-width: $mobile) {
+                padding: 0.1875rem 0.625rem;
+            }
+        }
+
+        .destination-selectedButton {
+            background-color: orange;
+            color: white;
+        }
+    }
+
+    .destination-cardsNote {
+        color: red;
+        margin: 0;
+    }
+
+    .destination-cards {
+        max-height: 18.75rem;
+        overflow: hidden;
+        scroll-behavior: auto;
+        transition: 1s ease-in-out;
+
+        &::-webkit-scrollbar {
+            width: 0.3125rem;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        @media (max-width: $mobile) {
+            max-height: 17rem;
+        }
+    }
+
+    .destination-viewMore {
+        max-height: 35.625rem;
+        overflow: auto;
+        transition: 1s ease-in-out;
+
+        @media (max-width: $mobile) {
+            max-height: 32rem;
+        }
+    }
+
+    .destination-viewMoreBlock {
+        width: 100%;
+        position: relative;
+        bottom: 3.125rem;
+        background-color: transparent;
+        z-index: 10;
+
+        .destination-viewMoreBtn {
+            background: rgb(239, 176, 60);
+            color: white;
+            width: 8%;
+            min-width: 7.5rem;
+            padding: 0.3125rem 0;
+            border-radius: 1.25rem;
+            border: none;
+            font-size: 1.125rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: orange;
+            }
+        }
+
+        .destination-cards4 {
+            display: none;
+
+            @media (max-width: $dest-card4-row) {
+                display: inline-block;
+            }
+        }
+
+        .destination-cards3 {
+            display: none;
+
+            @media (max-width: $dest-card3-row) {
+                display: inline-block;
+            }
+        }
+
+        .destination-cards2 {
+            display: none;
+
+            @media (max-width: $dest-card2-row) {
+                display: inline-block;
+            }
+        }
+
+        .destination-cards1 {
+            display: none;
+        }
+    }
+}

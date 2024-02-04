@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@100;300;400;500;7008display-swap");
+@import "./Variables.scss";
+@import "./Home.scss";
+@import "./Navbar.scss";
+@import "./Login.scss";
+@import "./Banner.scss";
+@import "./RatingViews.scss";
+@import "./PopularDestination.scss";
+@import "./BookingBlock.scss";
+@import "./Destination.scss";
+@import "./Hotels.scss";
+@import "./Cards.scss";
+@import "./ReadMoreandLess.scss";
+@import "./MoreDetails.scss";
+@import "./ChooseUs.scss";
+@import "./ClientsReview.scss";
+@import "./ContactDetails.scss";
+@import "./Portfolio.scss";
+@import "./Footer.scss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+    .App {
+        text-align: center;
+
+        button:focus {
+            outline: 0px;
+        }
+    }
+}

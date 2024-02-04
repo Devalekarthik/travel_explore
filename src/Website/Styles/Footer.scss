@@ -1,0 +1,197 @@
+.footer {
+    padding: 2rem 0rem 1rem 3rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: $desktop) {
+        padding-right: 3rem;
+    }
+
+    @media (max-width: $tabs) {
+        gap: 0rem;
+        padding: 2rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        max-height: 18.75rem;
+        flex-direction: row;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            width: 0.3125rem;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: black;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: white;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: white;
+        }
+    }
+
+    .footer-company {
+        width: 38%;
+        text-align: left;
+        margin-top: -1.25rem;
+
+        @media (max-width: $desktop) {
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer-title {
+            font-size: 3rem;
+            font-weight: 600;
+
+            @media (max-width: $mobile) {
+                font-size: 2.5rem;
+            }
+        }
+
+        .footer-subTitle {
+            font-size: 1rem;
+
+            @media (max-width: $desktop) {
+                margin-bottom: 0.3125rem;
+            }
+
+            @media (max-width: $mobile) {
+                font-size: 0.875rem;
+            }
+        }
+
+        .footer-info {
+            font-size: 1.125rem;
+
+            @media (max-width: $desktop) {
+                margin-bottom: 0.3125rem;
+            }
+
+            @media (max-width: $mobile) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .footer-connections {
+        display: flex;
+        width: 62%;
+
+        @media (max-width: $desktop) {
+            width: 100%;
+        }
+
+        @media (max-width: $tabs) {
+            flex-direction: column-reverse;
+        }
+
+        @media (max-width: $mobile) {
+            gap: 0rem;
+        }
+
+        .footer-connectionTitle {
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+
+        .footer-subscribtion {
+            width: 50%;
+
+            @media (max-width: $desktop) {
+                width: 100%;
+            }
+
+            .form-group {
+                padding: 0.9375rem 15%;
+                text-align: left;
+
+                @media (max-width: $desktop) {
+                    text-align: center;
+                    padding: 0.3125rem 5%;
+                }
+
+                @media (max-width: $mobile) {
+                    padding: 0 5%;
+                }
+
+                .footer-emailLabel {
+                    width: 100%;
+                }
+
+                .footer-error {
+                    color: red;
+                    margin-bottom: 0;
+                }
+
+                .footer-success {
+                    color: green;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+
+                .footer-subscribeBtn {
+                    background: orange;
+                    color: white;
+                    width: 8.125rem;
+                    padding: 0.625rem 0;
+                    border-radius: 1.875rem;
+                    border: none;
+                    font-size: 0.875rem;
+                    cursor: pointer;
+                    margin-top: 0.625rem;
+                }
+            }
+        }
+
+        .footer-contactInfo {
+            width: 50%;
+            text-align: center;
+
+            @media (max-width: $desktop) {
+                width: 100%;
+            }
+
+            .footer-tagsInfo {
+                margin-top: 0.9375rem;
+                font-size: 1.375rem;
+                font-weight: 600;
+
+                @media (max-width: $desktop) {
+                    margin-top: 0.625rem;
+                    margin-bottom: 0;
+                }
+
+                li {
+                    list-style-type: none;
+                    margin-bottom: 0.3125rem;
+                    align-items: center;
+                    font-size: 1.375rem;
+                    font-weight: 500;
+
+                    @media (max-width: $mobile) {
+                        font-size: 1.125rem;
+                    }
+
+                    svg {
+                        font-size: 1.875rem;
+                        position: relative;
+                        bottom: 0.125rem;
+
+                        @media (max-width: $mobile) {
+                            font-size: 1.375rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

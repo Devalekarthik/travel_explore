@@ -1,0 +1,9 @@
+.home {
+    .home-info {
+        margin: 3rem 4rem;
+
+        @media (max-width: $tabs) {
+            margin: 3rem 2rem;
+        }
+    }
+}

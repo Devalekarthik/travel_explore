@@ -1,0 +1,10 @@
+.booking {
+    margin-top: -2.1875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    @media (min-width: $desktop) {
+        margin-top: 4.375rem;
+    }
+}

@@ -1,0 +1,140 @@
+.chooseUs {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    @media (max-width: $tabs) {
+        flex-direction: column;
+    }
+
+    .chooseUs-imgs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3.75rem;
+
+        .chooseUs-bgimg {
+            width: 12.5rem;
+            height: 18.75rem;
+            border-radius: 6.25rem;
+            border: 0.3125rem solid white;
+            transition: 1s ease-in-out;
+
+            @media (max-width: $mobile) {
+                width: 10.3125rem;
+                height: 15rem;
+            }
+        }
+
+        .chooseUs-smimg {
+            width: 7.5rem;
+            height: 12.5rem;
+            border-radius: 6.25rem;
+            outline: 0.3125rem solid white;
+            position: relative;
+            right: 4.375rem;
+            transition: 1s ease-in-out;
+
+            @media (max-width: $mobile) {
+                width: 5.3125rem;
+                height: 8.75rem;
+                right: 3.625rem;
+            }
+        }
+    }
+
+    .chooseUs-block {
+        width: 65%;
+        padding: 1.25rem;
+
+        @media (max-width: $tabs) {
+            width: 100%;
+        }
+
+        @media (max-width: $mobile) {
+            padding: 0.625rem;
+        }
+
+        .chooseUs-texts {
+            text-align: left;
+            margin-bottom: 0.625rem;
+
+            @media (max-width: $tabs) {
+                text-align: center;
+            }
+
+            .chooseUs-title {
+                font-weight: 600;
+                font-size: 1.875rem;
+                margin: 0;
+                margin-bottom: 0.125rem;
+
+                @media (max-width: $mobile) {
+                    font-size: 1.5625rem;
+                    line-height: 1.875rem;
+                }
+            }
+
+            .chooseUs-subTitle {
+                font-size: 0.875rem;
+                margin: 0;
+                line-height: 1.25rem;
+            }
+        }
+
+        .chooseUs-safety {
+            display: flex;
+            gap: 0.625rem;
+            margin-bottom: 0.625rem;
+            text-align: left;
+            align-items: center;
+
+            @media (max-width: $mobile) {
+                flex-direction: column;
+                gap: 0rem;
+            }
+
+            .chooseUs-safetyImages {
+
+                .css-i4bv87-MuiSvgIcon-root,
+                .css-vubbuv {
+                    width: 5rem;
+                    height: 4.5rem;
+
+                    @media (max-width: $mobile) {
+                        width: 3.8rem;
+                        height: 3.2rem;
+                    }
+                }
+
+                .chooseUs-safetyImg {
+                    width: 5rem;
+                    height: 5rem;
+
+                    @media (max-width: $mobile) {
+                        width: 3.8rem;
+                        height: 3.8rem;
+                    }
+                }
+            }
+
+            .chooseUs-safetyText {
+                .chooseUs-safetyTitle {
+                    font-weight: 600;
+                    font-size: 1.125rem;
+                    margin-bottom: 0.1875rem;
+                }
+
+                .chooseUs-safetyInfo {
+                    font-size: 0.875rem;
+                    line-height: 1.125rem;
+                    margin-bottom: 0;
+                }
+
+                @media (max-width: $mobile) {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

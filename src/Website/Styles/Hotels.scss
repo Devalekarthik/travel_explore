@@ -1,0 +1,263 @@
+.hotels {
+    display: flex;
+    padding-right: 0;
+    gap: 1.25rem;
+
+    @media (max-width: $desktop) {
+        flex-direction: column;
+        gap: 0.625rem;
+        margin-top: -1.25rem;
+    }
+
+    .hotels-offers {
+        width: 50%;
+        height: auto;
+        position: relative;
+        text-align: left;
+
+        @media (max-width: $desktop) {
+            width: 100%;
+            text-align: center;
+        }
+
+        .hotels-bgimg {
+            position: absolute;
+            right: -2.1875rem;
+            width: 56%;
+            height: 62%;
+            object-fit: fit;
+            z-index: -1;
+            opacity: 0.5;
+            top: 10%;
+            transition: 1s ease-in-out;
+
+            @media (max-width: $desktop) {
+                width: 75%;
+                height: auto;
+                left: 13%;
+                right: 0;
+                top: 15%;
+                transition: none;
+            }
+
+            @media (max-width: $tabs) {
+                transition: none;
+            }
+
+            @media (max-width: $mobile) {
+                width: 100%;
+                left: 0%;
+            }
+        }
+
+        .hotels-specialTag {
+            font-size: 3.125rem;
+            font-weight: 600;
+
+            @media (max-width: $mobile) {
+                font-size: 2.3rem;
+            }
+        }
+
+        .hotels-offersblock {
+            display: flex;
+            flex-direction: column;
+            margin-top: 4rem;
+            transition: 1s ease-in-out;
+
+            @media (max-width: $desktop) {
+                margin-top: 44%;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                transition: none;
+            }
+
+            @media (max-width: $tabs) {
+                margin-top: 42%;
+            }
+
+            @media (max-width: $mobile) {
+                margin-top: 58%;
+            }
+
+            .hotel-offersTag {
+                transition: 1s ease-in-out;
+
+                .hotels-offersText {
+                    font-size: 1.375rem;
+                    font-weight: 600;
+
+                    span:nth-child(1) {
+                        color: gray;
+                    }
+
+                    span:nth-child(2) {
+                        color: red;
+                        font-size: 2.5rem;
+                    }
+
+                    .hotels-offersOnlineText {
+                        @media (max-width: $desktop) {
+                            margin-top: -0.625rem;
+                        }
+                    }
+                }
+            }
+
+            .hotel-offersTagViewMore {
+                @media (min-width: $desktop) {
+                    margin-bottom: 7.5rem;
+                    transition: 1s ease-in-out;
+                }
+            }
+
+            .hotel-searchBlock {
+                .hotel-searchText {
+                    font-size: 1.375rem;
+                    margin: 0;
+                }
+
+                .hotels-searchBtn {
+                    margin-top: 0.3125rem;
+                    border: none;
+                    background: orange;
+                    color: white;
+                    padding: 0.625rem;
+                    width: 60%;
+                    border-radius: 3.125rem;
+                    cursor: pointer;
+                    min-width: 26.25rem;
+
+                    @media (max-width: $desktop) {
+                        min-width: 22.5rem;
+                    }
+
+                    @media (max-width: $mobile) {
+                        min-width: 16rem;
+                        font-size: 0.875rem;
+                    }
+                }
+
+                @media (max-width: $desktop) {
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .hotels-searchdisabledBtn {
+                    background: lightgray;
+                    color: rgb(151, 140, 140);
+
+                    &:hover {
+                        border: none;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+
+        .hotel-offersViewMore {
+            @media (min-width: $desktop) {
+                margin-top: 12.125rem;
+                transition: 1s ease-in-out;
+            }
+        }
+    }
+
+    .hotels-cardsBlock {
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media (max-width: $desktop) {
+            width: 100%;
+            display: block;
+        }
+
+        .hotels-cardsNote {
+            color: red;
+            margin: 0;
+        }
+
+        .hotels-cards {
+            max-height: 18.75rem;
+            scroll-behavior: auto;
+            overflow: hidden;
+            transition: 1s ease-in-out;
+
+            &::-webkit-scrollbar {
+                width: 0.3125rem;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            @media (max-width: $mobile) {
+                max-height: 17rem;
+            }
+        }
+
+        .hotels-viewMore {
+            max-height: 35.625rem;
+            overflow: auto;
+            transition: 1s ease-in-out;
+
+            @media (max-width: $mobile) {
+                max-height: 32rem;
+            }
+        }
+
+        .hotels-cardsviewMoreBlock {
+            width: 100%;
+            position: relative;
+            bottom: 3.125rem;
+            background-color: transparent;
+            z-index: 10;
+
+            .hotels-viewMoreBtn {
+                background: rgb(239, 176, 60);
+                color: white;
+                width: 16%;
+                min-width: 7.5rem;
+                padding: 0.3125rem 0;
+                border-radius: 1.25rem;
+                border: none;
+                font-size: 1.125rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: orange;
+                }
+            }
+
+            .hotels-cards2 {
+                display: none;
+
+                @media (min-width: $desktop) and (max-width: $hotels-card2-row) {
+                    display: inline-block;
+                }
+
+                @media (max-width: $hotels-card2-row-tabs) {
+                    display: inline-block;
+                }
+            }
+
+            .hotels-cards1 {
+                display: none;
+            }
+        }
+    }
+}
