@@ -1257,7 +1257,7 @@
         "Personal-Details": {
             "Name": "Karthik D",
             "Img": "./Profile/myprofile.jpg",
-            "Role": "System Engineer",
+            "Role": "Systems Engineer",
             "Designation": "(UI, React Developer)",
             "Mobile-No": "+91 9742534213",
             "Address": "Ganesh Colony, Ballari",
@@ -1278,7 +1278,7 @@
             "Bootstrap",
             "MUI (Material UI)",
             "RWD (Responsive Web Design)",
-            "Tools Used : Vscode, Git & GitHub, BitBucket, Jira"
+            "Tools Used : Visual Studio Code, Git & GitHub, Jira, BitBucket"
         ],
         "Experience": {
             "Company": "Infosys",
@@ -1299,7 +1299,8 @@
                 "Desc": [
                     "This website is a travel website where people can book their favourite destinations and nearby hotels to their destinations.",
                     "This website is a user-friendly and it's completely a responsive website where user can access from Desktop/Tab/Mobile, with proper alignment of the design in which user is viewing.",
-                    "This website contains Dynamic Coding completely where the data is coming in the form of JSON format. If in case we have to add or delete data we can do it easily no need to alter the codes just change in JSON and everything will be done according.",
+                    "This website is also taken care of Client-Side Validation.",
+                    "This website contains Dynamic Coding completely where the data is coming in the form of JSON format.",
                     "In this website I have majorly taken care of DRC (Don't repeat code) process, Re-Useable components and code optimisation. So that we can reuse the common components and reduce the size of the website."
                 ]
             }
@@ -1309,12 +1310,12 @@
             "Kannada",
             "Hindi",
             "Telugu",
-            "Marati"
+            "Marathi"
         ],
         "Education": {
             "College": "MS Ramaiah Institute Of Technology",
             "Branch": "Civil Engineering",
-            "CGPA": "8.34",
+            "CGPA": "8.23",
             "Location": "Bangalore"
         },
         "Certification": [
