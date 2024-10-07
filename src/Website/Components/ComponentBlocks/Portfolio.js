@@ -73,7 +73,7 @@ const Portfolio = (props) => {
       return (
         <div className="portfolio-skillsDetails">
           {[...Array(SkillDetails.length)].map((item, index) => (
-            <div>{SkillDetails[index]}</div>
+            <div key={index}>{SkillDetails[index]}</div>
           ))}
         </div>
       );
@@ -85,8 +85,8 @@ const Portfolio = (props) => {
           <h2>
             {experienceDetails.Company} : {experienceDetails.Years}
           </h2>
-          {experienceDetails?.Desc?.map((item) => (
-            <div>{item}</div>
+          {experienceDetails?.Desc?.map((item, index) => (
+            <div key={index}>{item}</div>
           ))}
         </div>
       );
@@ -97,7 +97,7 @@ const Portfolio = (props) => {
         <div className="portfolio-educationDetails">
           {[...Array(Object.keys(educationDetails).length)].map(
             (item, index) => (
-              <li>
+              <li key={index}>
                 {Object.keys(educationDetails)[index]} :{" "}
                 {Object.values(educationDetails)[index]}
               </li>
@@ -111,24 +111,29 @@ const Portfolio = (props) => {
       return (
         <div className="portfolio-languageDetails">
           {[...Array(languageDetails.length)].map((item, index) => (
-            <div>{languageDetails[index]}</div>
+            <div key={index}>{languageDetails[index]}</div>
           ))}
         </div>
       );
     };
 
-    const Projects = (projectDetails) => {
+    const Website = (websiteDetails) => {
       return (
         <div className="portfolio-projectDetails">
           <h3>
-            {projectDetails?.Website?.Title}:{" "}
-            <a href={projectDetails?.Website?.Link}>
-              {projectDetails?.Website?.Name}
+            {websiteDetails?.Website?.Title}:{" "}
+            <a
+              href={websiteDetails?.Website?.Link}
+              target="_blank"
+              className="linkColor"
+              rel="noreferrer"
+            >
+              {websiteDetails?.Website?.Name}
             </a>
           </h3>
-          <h4>{projectDetails?.["Website-Desc"]?.["Desc-Title"]} :</h4>
-          {projectDetails?.["Website-Desc"]?.Desc?.map((item) => (
-            <li>{item}</li>
+          <h4>{websiteDetails?.["Website-Desc"]?.["Desc-Title"]} :</h4>
+          {websiteDetails?.["Website-Desc"]?.Desc?.map((item, index) => (
+            <li key={index}>{item}</li>
           ))}
         </div>
       );
@@ -138,8 +143,31 @@ const Portfolio = (props) => {
       return (
         <div className="portfolio-certificateDetails">
           {[...Array(certificateDetails.length)].map((item, index) => (
-            <li>{certificateDetails[index]}</li>
+            <li key={index}>{certificateDetails[index]}</li>
           ))}
+        </div>
+      );
+    };
+
+    const Projects = (projectDetails) => {
+      const displayData = (data) => {
+        return (
+          <>
+            <h3>
+              {data?.Website?.Title}: {data?.Website?.Name}
+            </h3>
+            <h4>{data?.["Website-Desc"]?.["Desc-Title"]} :</h4>
+            {data?.["Website-Desc"]?.Desc?.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </>
+        );
+      };
+
+      return (
+        <div className="portfolio-projectDetails">
+          {displayData(projectDetails[0])}
+          {displayData(projectDetails[1])}
         </div>
       );
     };
@@ -152,6 +180,7 @@ const Portfolio = (props) => {
             Skills: accordion(title, Skills(details)),
             Experience: accordion(title, Experience(details)),
             Projects: accordion(title, Projects(details)),
+            Website: accordion(title, Website(details)),
             Languages: accordion(title, Languages(details)),
             Education: accordion(title, Education(details)),
             Certification: accordion(title, Certification(details)),
@@ -168,6 +197,7 @@ const Portfolio = (props) => {
           <img
             src={PortfolioData["Personal-Details"].Img}
             className="portfolio-img"
+            alt=""
           />
         </div>
         <div className="portfolio-texts">
@@ -181,6 +211,19 @@ const Portfolio = (props) => {
             {PortfolioData["Personal-Details"].Designation}
           </div>
           <p className="portfolio-info">
+            <li>
+              <h3>
+                {PortfolioData["Personal-Details"]["WebsiteTitle"]}:{" "}
+                <a
+                  href={PortfolioData["Personal-Details"]["Website-Link"]}
+                  target="_blank"
+                  className="linkColor"
+                  rel="noreferrer"
+                >
+                  {PortfolioData["Personal-Details"]["Website-Name"]}
+                </a>
+              </h3>
+            </li>
             <li>
               <PhoneAndroidRoundedIcon />{" "}
               {PortfolioData["Personal-Details"]["Mobile-No"]}
