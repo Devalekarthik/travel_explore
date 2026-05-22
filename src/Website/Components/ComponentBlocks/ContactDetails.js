@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "bootstrap-4-react";
 import "bootstrap";
 import { validateContactForm } from "../Common/Validation";
