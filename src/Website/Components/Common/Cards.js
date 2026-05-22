@@ -3,7 +3,7 @@ import "bootstrap-4-react";
 import "bootstrap";
 import { useState } from "react";
 import MoreDetails from "./MoreDetails";
-import StarRoundedIcon from "@mui/icons-material/StarRounded";
+import StarRating from "./StarRating";
 
 const Cards = (props) => {
   const { Data, destination, setBookedDestination, setBookedHotel, id } = props;
@@ -36,8 +36,7 @@ const Cards = (props) => {
                     </div>
                   </div>
                   <div className="cards-rating">
-                    {item?.rating}
-                    <StarRoundedIcon />
+                    <StarRating rating={item?.rating} />
                   </div>
                 </div>
               </div>

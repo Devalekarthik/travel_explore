@@ -18,17 +18,15 @@ const StarRating = ({
   filledIcon: FilledIcon = StarRoundedIcon,
   outlineIcon: OutlineIcon = StarOutlineRoundedIcon,
 }) => {
-  const filledStars = Math.min(Math.max(rating, 0), 5);
+  // Convert rating to number and clamp between 0 and 5
+  const ratingNum = Math.min(Math.max(Number(rating) || 0, 0), 5);
+  const filledStars = Math.floor(ratingNum);
   const outlineStars = 5 - filledStars;
 
   return (
     <span className={`star-rating ${className}`}>
-      {[...Array(filledStars)].map((_, index) => (
-        <FilledIcon key={`filled-${index}`} />
-      ))}
-      {[...Array(outlineStars)].map((_, index) => (
-        <OutlineIcon key={`outline-${index}`} />
-      ))}
+      {ratingNum}
+      <FilledIcon />
     </span>
   );
 };
