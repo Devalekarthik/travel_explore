@@ -1,4 +1,3 @@
-import React from "react";
 import ReadMoreandLess from "../Common/ReadMoreandLess";
 
 const PopularDestination = (props) => {

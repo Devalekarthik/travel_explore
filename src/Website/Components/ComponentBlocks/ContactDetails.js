@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "bootstrap-4-react";
 import "bootstrap";
 import { validateContactForm } from "../Common/Validation";
+import FormInput from "../Common/FormInput";
 
 const ContactDetails = (props) => {
   const { Data } = props;
@@ -41,33 +42,27 @@ const ContactDetails = (props) => {
           <div className="contact-title">{Data.ContactUs.Title}</div>
           <p className="contact-subTitle">{Data.ContactUs["title-info"]}</p>
           <div class="form-group">
-            <input
+            <FormInput
               type="text"
               name="name"
-              class="form-control"
-              aria-describedby="emailHelp"
               placeholder={Data.PlaceHolderLabel.name}
               value={contactData.name}
               onChange={(e) => handleContactInput(e)}
+              error={contactError?.name}
+              errorClassName="contact-error"
             />
-            {contactError?.name && (
-              <p className="contact-error">*{contactError?.name}</p>
-            )}
-            <input
+            <FormInput
               type="email"
               name="email"
-              class="form-control"
               placeholder={Data.PlaceHolderLabel.email}
               value={contactData.email}
               onChange={(e) => handleContactInput(e)}
+              error={contactError?.email}
+              errorClassName="contact-error"
             />
-            {contactError?.email && (
-              <p className="contact-error">*{contactError?.email}</p>
-            )}
-            <input
+            <FormInput
               type="number"
               name="phoneNo"
-              class="form-control"
               placeholder={`${Data.PlaceHolderLabel.mobileNo} ${Data.PlaceHolderLabel.optional}`}
               value={contactData.phoneNo}
               onChange={(e) => handleContactInput(e)}

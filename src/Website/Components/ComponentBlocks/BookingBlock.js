@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Destination from "../Common/Destination";
 import Hotels from "../Common/Hotels";
 

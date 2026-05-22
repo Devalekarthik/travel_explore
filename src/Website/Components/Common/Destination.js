@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Select from "react-select";
 import Cards from "./Cards";
 
@@ -115,18 +115,7 @@ const Destination = (props) => {
         </div>
         <div className="destination-viewMoreBlock">
           <button
-            className={`destination-viewMoreBtn
-            ${
-              destination.length === 4
-                ? "destination-cards4"
-                : destination.length === 3
-                ? "destination-cards3"
-                : destination.length === 2
-                ? "destination-cards2"
-                : destination.length === 1
-                ? "destination-cards1"
-                : ""
-            }`}
+            className={`destination-viewMoreBtn destination-cards${destination.length}`}
             onClick={() => setDestinationViewMore(!destinationViewMore)}
           >
             {destinationViewMore

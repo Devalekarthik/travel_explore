@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { validateLoginForm } from "../Common/Validation";
+import FormInput from "../Common/FormInput";
+import Modal from "../Common/Modal";
 
 const Login = (props) => {
   const { Data, loginData, setLoginData, setLogOut } = props;
@@ -16,50 +18,41 @@ const Login = (props) => {
             <label for="recipient-name" class="col-form-label login-label">
               {Data.LabelData.name} :
             </label>
-            <input
+            <FormInput
               type="text"
-              class="form-control"
-              id="recipient-name"
               name="name"
               value={loginData.name}
               onChange={(e) => handleLoginData(e)}
+              error={loginError?.name}
+              errorClassName="login-error"
             />
-            {loginError?.name && (
-              <p className="login-error">*{loginError?.name}</p>
-            )}
           </div>
         )}
         <div class="form-group">
           <label for="recipient-name" class="col-form-label login-label">
             {Data.LabelData.emailID} :
           </label>
-          <input
+          <FormInput
             type="text"
-            class="form-control"
-            id="recipient-name"
             name="email"
             value={loginData.email}
             onChange={(e) => handleLoginData(e)}
+            error={loginError?.email}
+            errorClassName="login-error"
           />
-          {loginError?.email && (
-            <p className="login-error">*{loginError?.email}</p>
-          )}
         </div>
         <div class="form-group">
           <label for="message-text" class="col-form-label login-label">
             {Data.LabelData.password} :
           </label>
-          <input
+          <FormInput
             type="password"
-            class="form-control"
-            id="recipient-name"
             name="password"
             value={loginData.password}
             onChange={(e) => handleLoginData(e)}
+            error={loginError?.password}
+            errorClassName="login-error"
           />
-          {loginError?.password && (
-            <p className="login-error">*{loginError?.password}</p>
-          )}
         </div>
       </form>
     );
@@ -93,100 +86,78 @@ const Login = (props) => {
 
   return (
     <div className="login">
-      <div
-        class="modal fade"
+      <Modal
         id="login"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="loginTitle"
-        aria-hidden="true"
+        title={Data.LabelData.signIn}
+        showCloseButton={true}
       >
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="loginTitle">
-                {Data.LabelData.signIn}
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" onClick={() => setLoginType("admin")}>
-                  <a
-                    class="nav-link active"
-                    id="pills-home-tab"
-                    data-toggle="pill"
-                    href="#admin"
-                    role="tab"
-                    aria-controls="pills-home"
-                    aria-selected="true"
-                  >
-                    {Data.LabelData.admin}
-                  </a>
-                </li>
-                <li class="nav-item" onClick={() => setLoginType("register")}>
-                  <a
-                    class="nav-link"
-                    id="pills-profile-tab"
-                    data-toggle="pill"
-                    href="#register"
-                    role="tab"
-                    aria-controls="pills-profile"
-                    aria-selected="false"
-                  >
-                    {Data.LabelData.register}
-                  </a>
-                </li>
-              </ul>
-              <div class="tab-content" id="pills-tabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="admin"
-                  role="tabpanel"
-                  aria-labelledby="pills-home-tab"
-                >
-                  {loginForm()}
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="register"
-                  role="tabpanel"
-                  aria-labelledby="pills-profile-tab"
-                >
-                  {loginForm()}
-                </div>
-              </div>
-              <button
-                className={`login-signinBtn
-                  ${
-                    loginError === null && loginValid
-                      ? "btn btn-success"
-                      : "btn btn-primary"
-                  }
-                `}
-                onClick={() =>
-                  loginError === null
-                    ? (setLoginValid(false), setLogOut(true))
-                    : loginValidation()
-                }
-                data-dismiss={loginError === null && loginValid ? "modal" : ""}
-                aria-label="Close"
-              >
-                {loginError === null && loginValid
-                  ? Data.LabelData.signIn
-                  : Data.LabelData.verify}
-              </button>
-            </div>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" onClick={() => setLoginType("admin")}>
+            <a
+              class="nav-link active"
+              id="pills-home-tab"
+              data-toggle="pill"
+              href="#admin"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              {Data.LabelData.admin}
+            </a>
+          </li>
+          <li class="nav-item" onClick={() => setLoginType("register")}>
+            <a
+              class="nav-link"
+              id="pills-profile-tab"
+              data-toggle="pill"
+              href="#register"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              {Data.LabelData.register}
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="admin"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
+            {loginForm()}
+          </div>
+          <div
+            class="tab-pane fade"
+            id="register"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+          >
+            {loginForm()}
           </div>
         </div>
-      </div>
+        <button
+          className={`login-signinBtn
+            ${
+              loginError === null && loginValid
+                ? "btn btn-success"
+                : "btn btn-primary"
+            }
+          `}
+          onClick={() =>
+            loginError === null
+              ? (setLoginValid(false), setLogOut(true))
+              : loginValidation()
+          }
+          data-dismiss={loginError === null && loginValid ? "modal" : ""}
+          aria-label="Close"
+        >
+          {loginError === null && loginValid
+            ? Data.LabelData.signIn
+            : Data.LabelData.verify}
+        </button>
+      </Modal>
     </div>
   );
 };

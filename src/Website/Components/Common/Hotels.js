@@ -88,15 +88,7 @@ const Hotels = (props) => {
         </div>
         <div className="hotels-cardsviewMoreBlock">
           <button
-            className={`hotels-viewMoreBtn
-            ${
-              hotelsList.length === 2
-                ? "hotels-cards2"
-                : hotelsList.length === 1
-                ? "hotels-cards1"
-                : ""
-            }
-          `}
+            className={`hotels-viewMoreBtn hotels-cards${hotelsList.length}`}
             onClick={() => setHotelsViewMore(!hotelsViewMore)}
           >
             {hotelsViewMore ? Data.LabelData.viewLess : Data.LabelData.viewMore}

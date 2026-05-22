@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import PhoneAndroidRoundedIcon from "@mui/icons-material/PhoneAndroidRounded";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -57,12 +57,10 @@ const Portfolio = (props) => {
 
   const PortfolioData = Data.Portfolio;
 
-  const Portfolio = [...Array(Object.keys(PortfolioData).length)].map(
-    (item, index) => ({
-      title: Object.keys(PortfolioData)[index],
-      details: Object.values(PortfolioData)[index],
-    })
-  );
+  const Portfolio = Object.entries(PortfolioData).map(([title, details]) => ({
+    title,
+    details,
+  }));
 
   const PortfolioDetails = (title, details) => {
     const CareerObj = (Careerdetails) => {
@@ -72,9 +70,9 @@ const Portfolio = (props) => {
     const Skills = (SkillDetails) => {
       return (
         <div className="portfolio-skillsDetails">
-          {[...Array(SkillDetails.length)].map((item, index) => (
-            <div key={index}>{SkillDetails[index]}</div>
-          ))}
+          {Array.isArray(SkillDetails) ? SkillDetails.map((item, index) => (
+            <div key={index}>{item}</div>
+          )) : <div>{SkillDetails}</div>}
         </div>
       );
     };
@@ -95,14 +93,11 @@ const Portfolio = (props) => {
     const Education = (educationDetails) => {
       return (
         <div className="portfolio-educationDetails">
-          {[...Array(Object.keys(educationDetails).length)].map(
-            (item, index) => (
-              <li key={index}>
-                {Object.keys(educationDetails)[index]} :{" "}
-                {Object.values(educationDetails)[index]}
-              </li>
-            )
-          )}
+          {Object.entries(educationDetails).map(([key, value], index) => (
+            <li key={index}>
+              {key} : {value}
+            </li>
+          ))}
         </div>
       );
     };
@@ -110,9 +105,9 @@ const Portfolio = (props) => {
     const Languages = (languageDetails) => {
       return (
         <div className="portfolio-languageDetails">
-          {[...Array(languageDetails.length)].map((item, index) => (
-            <div key={index}>{languageDetails[index]}</div>
-          ))}
+          {Array.isArray(languageDetails) ? languageDetails.map((item, index) => (
+            <div key={index}>{item}</div>
+          )) : <div>{languageDetails}</div>}
         </div>
       );
     };
@@ -142,9 +137,9 @@ const Portfolio = (props) => {
     const Certification = (certificateDetails) => {
       return (
         <div className="portfolio-certificateDetails">
-          {[...Array(certificateDetails.length)].map((item, index) => (
-            <li key={index}>{certificateDetails[index]}</li>
-          ))}
+          {Array.isArray(certificateDetails) ? certificateDetails.map((item, index) => (
+            <li key={index}>{item}</li>
+          )) : <li>{certificateDetails}</li>}
         </div>
       );
     };

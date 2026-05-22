@@ -1,29 +1,15 @@
 import { useState } from "react";
-import StarRoundedIcon from "@mui/icons-material/StarRounded";
-import StarOutlineRoundedIcon from "@mui/icons-material/StarOutlineRounded";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import StarRating from "../Common/StarRating";
 
 const ClientsReview = (props) => {
   const { Data } = props;
 
   let clientData = Data.ClientReview.sort((a, b) => b.stars - a.stars);
-
-  let stars = (star) => {
-    return (
-      <span className="clients-reviewStars">
-        {[...Array(star)].map(() => (
-          <StarRoundedIcon />
-        ))}
-        {[...Array(5 - star)].map(() => (
-          <StarOutlineRoundedIcon />
-        ))}
-      </span>
-    );
-  };
 
   const [selectedAccordion, setSelectedAccordion] = useState(0);
   const [groupImg, setGroupImg] = useState(clientData[0].groupImg);
@@ -71,7 +57,7 @@ const ClientsReview = (props) => {
                         </div>
                         <div className="clients-reviewTitle">
                           <span className="clients-reviewName">
-                            {item.name} {stars(item.stars)}
+                            {item.name} <StarRating rating={item.stars} />
                           </span>
                           <div className="clients-reviewEmail">
                             {item.email}
