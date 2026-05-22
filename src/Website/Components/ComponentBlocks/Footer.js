@@ -3,6 +3,7 @@ import PhoneAndroidRoundedIcon from "@mui/icons-material/PhoneAndroidRounded";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import { validateSubscriptionEmail } from "../Common/Validation";
 
 const Footer = (props) => {
   const { Data } = props;
@@ -21,18 +22,9 @@ const Footer = (props) => {
   };
 
   const footervalidation = () => {
-    const redgeEmail = /^[a-z0-9A-Z]+@[a-z]+\.[a-z]{2,3}$/;
+    const error = validateSubscriptionEmail(subEmail.email, Data.ErrorLabel);
 
-    const error = {
-      email:
-        subEmail.email?.length === 0
-          ? Data.ErrorLabel.enterEmail
-          : !redgeEmail.test(subEmail.email)
-          ? Data.ErrorLabel.email
-          : "",
-    };
-
-    if (error.email === "") return setFooterError(null), setEmailSuccess(true);
+    if (error === null) return setFooterError(null), setEmailSuccess(true);
 
     return setFooterError(error);
   };

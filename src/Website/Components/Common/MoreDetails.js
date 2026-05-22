@@ -4,6 +4,7 @@ import StarRoundedIcon from "@mui/icons-material/StarRounded";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Link } from "react-scroll";
 import Select from "react-select";
+import { validateBookingForm } from "./Validation";
 
 const MoreDetails = (props) => {
   const { Data, selectedCard, setBookedDestination, setBookedHotel, id } =
@@ -41,44 +42,15 @@ const MoreDetails = (props) => {
   }));
 
   const dataValidation = () => {
-    const redgeEmail = /^[a-z0-9A-Z]+@[a-z]+\.[a-z]{2,3}$/;
+    const error = validateBookingForm(
+      inputData,
+      detailsCountry,
+      AllCountry,
+      id,
+      Data.ErrorLabel
+    );
 
-    const currentDate = new Date();
-    const selectedDate = new Date(inputData.TDate);
-    const PhoneNoLength = AllCountry.filter(
-      (item) => item.country === detailsCountry
-    )[0]?.numberLength;
-
-    const error = {
-      Fname: inputData.Fname === "" ? Data.ErrorLabel.name : "",
-      Email: !redgeEmail.test(inputData.Email)
-        ? Data.ErrorLabel.invalidEmail
-        : "",
-      Country: detailsCountry === "" ? Data.ErrorLabel.selectCountry : "",
-      MobileNo:
-        detailsCountry === ""
-          ? Data.ErrorLabel.verifyMobileNo
-          : inputData.MobileNo?.length === Number(PhoneNoLength)
-          ? ""
-          : Data.ErrorLabel.invalidMobileNo,
-      TDate:
-        inputData.TDate === ""
-          ? Data.ErrorLabel.enterDate
-          : selectedDate - currentDate <= 0
-          ? Data.ErrorLabel.expiredDate
-          : "",
-      Members: inputData?.Members === "" ? Data.ErrorLabel.members : "",
-      Rooms: inputData?.Rooms === "" ? Data.ErrorLabel.rooms : "",
-    };
-
-    if (
-      error.Fname === "" &&
-      error.Email === "" &&
-      error.Country === "" &&
-      error.MobileNo === "" &&
-      error.TDate === "" &&
-      (id === "places" ? error.Members : error.Rooms) === ""
-    ) {
+    if (error === null) {
       return setError(null);
     }
 

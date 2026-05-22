@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap-4-react";
 import "bootstrap";
+import { validateContactForm } from "../Common/Validation";
 
 const ContactDetails = (props) => {
   const { Data } = props;
@@ -19,14 +20,9 @@ const ContactDetails = (props) => {
   };
 
   const contactDataValidation = () => {
-    const redgeEmail = /^[a-z0-9A-Z]+@[a-z]+\.[a-z]{2,3}$/;
+    const error = validateContactForm(contactData, Data.ErrorLabel);
 
-    const error = {
-      name: contactData.name === "" ? Data.ErrorLabel.name : "",
-      email: !redgeEmail.test(contactData.email) ? Data.ErrorLabel.email : "",
-    };
-
-    if (error.name === "" && error.email === "")
+    if (error === null)
       return setContactError(null), setcontactFormVarify(!contactFormVarify);
     return setContactError(error);
   };
