@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { validateLoginForm } from "../Common/Validation";
 
 const Login = (props) => {
   const { Data, loginData, setLoginData, setLogOut } = props;
@@ -69,26 +70,9 @@ const Login = (props) => {
   };
 
   const loginValidation = () => {
-    const redgeEmail = /^[a-z0-9A-Z]+@[a-z]+\.[a-z]{2,3}$/;
+    const error = validateLoginForm(loginData, loginType, Data.ErrorLabel);
 
-    const error = {
-      name: loginData.name === "" ? Data.ErrorLabel.name : "",
-      email: !redgeEmail.test(loginData.email) ? Data.ErrorLabel.email : "",
-      password:
-        loginData.password === ""
-          ? Data.ErrorLabel.enterPassword
-          : loginData.password.length < 5
-          ? Data.ErrorLabel.weekPassword
-          : "",
-    };
-
-    if (
-      (loginType === "register" &&
-        error.name === "" &&
-        error.email === "" &&
-        error.password === "") ||
-      (error.email === "" && error.password === "")
-    ) {
+    if (error === null) {
       return setLoginError(null), setLoginValid(true);
     }
     return setLoginError(error);
