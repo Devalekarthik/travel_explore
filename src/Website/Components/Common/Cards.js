@@ -42,7 +42,7 @@ const Cards = (props) => {
               </div>
               <div className="cards-onhover">
                 <button
-                  class="cards-onhoverBTN btn btn-primary"
+                  className="cards-onhoverBTN btn btn-primary"
                   data-bs-target={`#${id}`}
                   data-bs-toggle="modal"
                   onClick={() => setSelectedCard([item])}

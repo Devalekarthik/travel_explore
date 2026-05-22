@@ -19,9 +19,7 @@ const Destination = (props) => {
     (item) => item.country === selectedCountry
   );
 
-  const countries = [...new Set(revisedData.map((item) => item.country))];
-  countries.unshift("All Country");
-  countries.sort();
+  const countries = ["All Country", ...new Set(revisedData.map((item) => item.country))].sort();
   const countryOption = countries.map((item) => ({ label: item, value: item }));
 
   const handleNavbar = (type) => {

@@ -35,7 +35,7 @@ const MoreDetails = (props) => {
   const descOffers = Data.Destination?.["destination-offers"];
   const hotelsOffers = Data.Destination?.["hotels-offers"];
 
-  const AllCountry = Data.PhoneNoValidation.sort((a, b) =>
+  const AllCountry = [...Data.PhoneNoValidation].sort((a, b) =>
     a.country.localeCompare(b.country)
   );
 
@@ -69,7 +69,6 @@ const MoreDetails = (props) => {
   useEffect(() => {
     setInputData({
       Fname: "",
-      Lname: "",
       Email: "",
       MobileNo: "",
       TDate: "",
@@ -150,9 +149,9 @@ const MoreDetails = (props) => {
             {Data.LabelData.formoredetailspleasefilltheform}{" "}
           </p>
         </div>
-        <div class="modal-footer">
+        <div className="modal-footer">
           <button
-            class="btn btn-primary"
+            className="btn btn-primary"
             data-bs-target={`#${id}2`}
             data-bs-toggle="modal"
           >
@@ -259,16 +258,16 @@ const MoreDetails = (props) => {
             )
           )}
         </div>
-        <div class="modal-footer">
+        <div className="modal-footer">
           <button
-            class="btn btn-primary"
+            className="btn btn-primary"
             data-bs-target={`#${id}`}
             data-bs-toggle="modal"
           >
             {Data.LabelData.backtoDetails}
           </button>
           <button
-            class={error === null ? "btn btn-success" : "btn btn-primary"}
+            className={error === null ? "btn btn-success" : "btn btn-primary"}
             data-bs-target={`#${id}3`}
             onClick={error === null ? handleBooking : dataValidation}
             data-bs-toggle={error === null ? "modal" : ""}
@@ -299,7 +298,7 @@ const MoreDetails = (props) => {
               {Data.LabelData.visitHotels}
             </p>
             <button
-              class="btn btn-primary"
+              className="btn btn-primary"
               type="button"
               data-bs-dismiss="modal"
               aria-label="Close"

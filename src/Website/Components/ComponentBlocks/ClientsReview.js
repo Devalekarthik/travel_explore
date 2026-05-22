@@ -9,7 +9,7 @@ import StarRating from "../Common/StarRating";
 const ClientsReview = (props) => {
   const { Data } = props;
 
-  let clientData = Data.ClientReview.sort((a, b) => b.stars - a.stars);
+  let clientData = [...Data.ClientReview].sort((a, b) => b.stars - a.stars);
 
   const [selectedAccordion, setSelectedAccordion] = useState(0);
   const [groupImg, setGroupImg] = useState(clientData[0].groupImg);
@@ -37,7 +37,7 @@ const ClientsReview = (props) => {
                 <div>
                   <Accordion
                     expanded={selectedAccordion === index}
-                    defaultExpanded={selectedAccordion === 0 ? true : false}
+                    defaultExpanded={selectedAccordion === 0}
                     onChange={() => handleChange(index)}
                     className={
                       selectedAccordion === index ? "clients-selectedCard" : ""

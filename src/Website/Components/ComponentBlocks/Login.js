@@ -14,8 +14,8 @@ const Login = (props) => {
     return (
       <form>
         {loginType === "register" && (
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label login-label">
+          <div className="form-group">
+            <label htmlFor="recipient-name" className="col-form-label login-label">
               {Data.LabelData.name} :
             </label>
             <FormInput
@@ -28,8 +28,8 @@ const Login = (props) => {
             />
           </div>
         )}
-        <div class="form-group">
-          <label for="recipient-name" class="col-form-label login-label">
+        <div className="form-group">
+          <label htmlFor="recipient-name" className="col-form-label login-label">
             {Data.LabelData.emailID} :
           </label>
           <FormInput
@@ -41,8 +41,8 @@ const Login = (props) => {
             errorClassName="login-error"
           />
         </div>
-        <div class="form-group">
-          <label for="message-text" class="col-form-label login-label">
+        <div className="form-group">
+          <label htmlFor="message-text" className="col-form-label login-label">
             {Data.LabelData.password} :
           </label>
           <FormInput
@@ -91,10 +91,10 @@ const Login = (props) => {
         title={Data.LabelData.signIn}
         showCloseButton={true}
       >
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item" onClick={() => setLoginType("admin")}>
+        <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li className="nav-item" onClick={() => setLoginType("admin")}>
             <a
-              class="nav-link active"
+              className="nav-link active"
               id="pills-home-tab"
               data-toggle="pill"
               href="#admin"
@@ -105,9 +105,9 @@ const Login = (props) => {
               {Data.LabelData.admin}
             </a>
           </li>
-          <li class="nav-item" onClick={() => setLoginType("register")}>
+          <li className="nav-item" onClick={() => setLoginType("register")}>
             <a
-              class="nav-link"
+              className="nav-link"
               id="pills-profile-tab"
               data-toggle="pill"
               href="#register"
@@ -119,9 +119,9 @@ const Login = (props) => {
             </a>
           </li>
         </ul>
-        <div class="tab-content" id="pills-tabContent">
+        <div className="tab-content" id="pills-tabContent">
           <div
-            class="tab-pane fade show active"
+            className="tab-pane fade show active"
             id="admin"
             role="tabpanel"
             aria-labelledby="pills-home-tab"
@@ -129,7 +129,7 @@ const Login = (props) => {
             {loginForm()}
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="register"
             role="tabpanel"
             aria-labelledby="pills-profile-tab"

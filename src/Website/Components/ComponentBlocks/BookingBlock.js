@@ -8,7 +8,7 @@ const BookingBlock = (props) => {
   const [bookedDestination, setBookedDestination] = useState([]);
   const [bookedHotel, setBookedHotel] = useState([]);
 
-  let revisedData = Data.Destination.places.sort((a, b) => b.rating - a.rating);
+  let revisedData = [...Data.Destination.places].sort((a, b) => b.rating - a.rating);
 
   revisedData = revisedData
     .map((item, index) => [

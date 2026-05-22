@@ -6,7 +6,7 @@ const ReadMoreandLess = (props) => {
 
   useEffect(() => {
     setReadMore(true);
-  }, [props]);
+  }, [text]);
 
   return (
     <>

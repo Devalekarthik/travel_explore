@@ -46,16 +46,16 @@ const Footer = (props) => {
           <div className="footer-connectionTitle">
             {Data.LabelData.keepConnected}
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <label
-              for="recipient-name"
-              class="col-form-label footer-emailLabel"
+              htmlFor="recipient-name"
+              className="col-form-label footer-emailLabel"
             >
               {Data.LabelData.subscribe}
             </label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="recipient-name"
               name="email"
               placeholder={Data.PlaceHolderLabel.email}

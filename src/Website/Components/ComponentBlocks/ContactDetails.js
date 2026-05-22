@@ -41,7 +41,7 @@ const ContactDetails = (props) => {
         <div className="contact-form">
           <div className="contact-title">{Data.ContactUs.Title}</div>
           <p className="contact-subTitle">{Data.ContactUs["title-info"]}</p>
-          <div class="form-group">
+          <div className="form-group">
             <FormInput
               type="text"
               name="name"
@@ -68,7 +68,7 @@ const ContactDetails = (props) => {
               onChange={(e) => handleContactInput(e)}
             />
             <textarea
-              class="form-control"
+              className="form-control"
               placeholder={Data.PlaceHolderLabel.message}
               rows="2"
               name="message"

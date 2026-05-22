@@ -15,7 +15,7 @@ const Navbar = (props) => {
     password: "",
   });
   const [logOut, setLogOut] = useState(false);
-  const [logOutSucces, setlogOutSucces] = useState(false);
+  const [logOutSucces, setLogOutSucces] = useState(false);
 
   const loginDataDetails = {
     Data: Data,
@@ -58,14 +58,14 @@ const Navbar = (props) => {
             onClick={() =>
               logOut
                 ? (setLogOut(false),
-                  setlogOutSucces(true),
+                  setLogOutSucces(true),
                   setNavbarIcon(!navbarIcon))
                 : (setLoginData({
                     name: "",
                     email: "",
                     password: "",
                   }),
-                  setlogOutSucces(false),
+                  setLogOutSucces(false),
                   setNavbarIcon(!navbarIcon))
             }
           >

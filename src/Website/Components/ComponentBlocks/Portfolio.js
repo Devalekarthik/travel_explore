@@ -23,7 +23,7 @@ const Portfolio = (props) => {
       <>
         <div className="portfolio-accordion">
           <Accordion
-            defaultExpanded={title === "Career Objective" ? true : false}
+            defaultExpanded={title === "Career Objective"}
           >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -38,7 +38,7 @@ const Portfolio = (props) => {
         <div className="portfolio-accordion-mobile">
           <Accordion
             expanded={selectedPortfolioCard === title}
-            defaultExpanded={title === "Career Objective" ? true : false}
+            defaultExpanded={title === "Career Objective"}
             onChange={() => handlePortfolio(title)}
           >
             <AccordionSummary
@@ -57,7 +57,7 @@ const Portfolio = (props) => {
 
   const PortfolioData = Data.Portfolio;
 
-  const Portfolio = Object.entries(PortfolioData).map(([title, details]) => ({
+  const portfolioItems = Object.entries(PortfolioData).map(([title, details]) => ({
     title,
     details,
   }));
@@ -81,7 +81,7 @@ const Portfolio = (props) => {
       return (
         <div className="portfolio-experienceDetails">
           <h2>
-            {experienceDetails.Company} : {experienceDetails.Years}
+            {experienceDetails?.Company} : {experienceDetails?.Years}
           </h2>
           {experienceDetails?.Desc?.map((item, index) => (
             <div key={index}>{item}</div>
@@ -161,8 +161,9 @@ const Portfolio = (props) => {
 
       return (
         <div className="portfolio-projectDetails">
-          {displayData(projectDetails[0])}
-          {displayData(projectDetails[1])}
+          {Array.isArray(projectDetails) ? projectDetails.map((data, index) => (
+            <div key={index}>{displayData(data)}</div>
+          )) : displayData(projectDetails)}
         </div>
       );
     };
@@ -240,18 +241,14 @@ const Portfolio = (props) => {
       </div>
       <div className="portfolio-accordionCards">
         <div className="portfolio-careerAccordion">
-          {Portfolio.map((item) =>
-            item.title === "Career Objective"
-              ? PortfolioDetails(item.title, item.details)
-              : ""
-          )}
+          {portfolioItems
+            .filter((item) => item.title === "Career Objective")
+            .map((item) => PortfolioDetails(item.title, item.details))}
         </div>
         <div className="portfolio-detailsAccordion">
-          {Portfolio.map((item) =>
-            item.title !== "Career Objective"
-              ? PortfolioDetails(item.title, item.details)
-              : ""
-          )}
+          {portfolioItems
+            .filter((item) => item.title !== "Career Objective")
+            .map((item) => PortfolioDetails(item.title, item.details))}
         </div>
       </div>
     </div>
