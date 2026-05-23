@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import "bootstrap-4-react";
-import "bootstrap";
 import { validateContactForm } from "../Common/Validation";
 import FormInput from "../Common/FormInput";
 
@@ -23,9 +21,12 @@ const ContactDetails = (props) => {
   const contactDataValidation = () => {
     const error = validateContactForm(contactData, Data.ErrorLabel);
 
-    if (error === null)
-      return setContactError(null), setcontactFormVarify(!contactFormVarify);
-    return setContactError(error);
+    if (error === null) {
+      setContactError(null);
+      setcontactFormVarify(!contactFormVarify);
+      return;
+    }
+    setContactError(error);
   };
 
   useEffect(() => {
@@ -36,7 +37,11 @@ const ContactDetails = (props) => {
     <div className="contact" id="Contact">
       <div className="contact-details">
         <div className="contact-img">
-          <img src="./ContactUs/ContactUs.jpg" className="contact-image" />
+          <img
+            src="./ContactUs/ContactUs.jpg"
+            className="contact-image"
+            alt={Data.ContactUs.Title}
+          />
         </div>
         <div className="contact-form">
           <div className="contact-title">{Data.ContactUs.Title}</div>

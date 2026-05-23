@@ -24,9 +24,13 @@ const Footer = (props) => {
   const footervalidation = () => {
     const error = validateSubscriptionEmail(subEmail.email, Data.ErrorLabel);
 
-    if (error === null) return setFooterError(null), setEmailSuccess(true);
+    if (error === null) {
+      setFooterError(null);
+      setEmailSuccess(true);
+      return;
+    }
 
-    return setFooterError(error);
+    setFooterError(error);
   };
 
   useEffect(() => {

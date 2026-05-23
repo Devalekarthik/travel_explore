@@ -34,7 +34,7 @@ const ClientsReview = (props) => {
           >
             {clientData.map((item, index) => {
               return (
-                <div>
+                <div key={item.email}>
                   <Accordion
                     expanded={selectedAccordion === index}
                     defaultExpanded={selectedAccordion === 0}
@@ -53,6 +53,7 @@ const ClientsReview = (props) => {
                           <img
                             src={item.profileImg}
                             className="clients-reviewImg"
+                            alt={item.name}
                           />
                         </div>
                         <div className="clients-reviewTitle">
@@ -88,12 +89,14 @@ const ClientsReview = (props) => {
           <img
             src={groupImg}
             className={`client-pic ${clientViewMore && "clients-viewMorePic"} `}
+            alt="Client group"
           />
           <img
             src="./ClientReview/ClientReview.PNG"
             className={`client-bgPic ${
               clientViewMore && "clients-viewMoreBgPic"
             }`}
+            alt="Client review background"
           />
         </div>
       </div>

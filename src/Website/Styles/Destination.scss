@@ -21,7 +21,7 @@
     }
 
     .destination-search {
-        text-align: start;
+        text-align: left;
         display: flex;
         justify-content: center;
         gap: 1.25rem;
@@ -104,7 +104,7 @@
 
     .destination-navbar {
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         margin: 1.25rem 0rem 0.625rem;
         flex-wrap: wrap;
         gap: 1.25rem;

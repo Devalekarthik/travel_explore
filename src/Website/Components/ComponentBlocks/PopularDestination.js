@@ -12,7 +12,7 @@ const PopularDestination = (props) => {
         </div>
         {Data.PopularDestination.travelPlaces.map((item) => {
           return (
-            <div className="popularBlock">
+            <div className="popularBlock" key={item.title}>
               <div className="popularBlock-text">
                 <div className="popularBlock-title">{item.title}</div>
                 <p className="popularBlock-infoMobile">
@@ -24,8 +24,16 @@ const PopularDestination = (props) => {
                 <p className="popularBlock-info">{item.info}</p>
               </div>
               <div className="popularBlock-images">
-                <img src={item.img1} alt="" className="popularBlock-img" />
-                <img src={item.img2} alt="" className="popularBlock-img" />
+                <img
+                  src={item.img1}
+                  alt={item.title}
+                  className="popularBlock-img"
+                />
+                <img
+                  src={item.img2}
+                  alt={item.title}
+                  className="popularBlock-img"
+                />
               </div>
             </div>
           );

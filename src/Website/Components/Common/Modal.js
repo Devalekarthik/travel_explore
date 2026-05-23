@@ -38,21 +38,21 @@ const Modal = ({
         role="document"
       >
         <div className="modal-content">
-          {title && (
+          {(title || showCloseButton) && (
             <div className="modal-header">
-              <h5 className="modal-title" id={`${id}Label`}>
-                {title}
-              </h5>
+              {title && (
+                <h5 className="modal-title" id={`${id}Label`}>
+                  {title}
+                </h5>
+              )}
               {showCloseButton && (
                 <button
                   type="button"
-                  className="close"
+                  className="btn-close"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                   onClick={onClose}
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
+                />
               )}
             </div>
           )}

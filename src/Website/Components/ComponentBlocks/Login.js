@@ -66,9 +66,21 @@ const Login = (props) => {
     const error = validateLoginForm(loginData, loginType, Data.ErrorLabel);
 
     if (error === null) {
-      return setLoginError(null), setLoginValid(true);
+      setLoginError(null);
+      setLoginValid(true);
+      return;
     }
-    return setLoginError(error);
+    setLoginError(error);
+  };
+
+  const handleSignIn = () => {
+    if (loginError === null) {
+      setLoginValid(false);
+      setLogOut(true);
+      return;
+    }
+
+    loginValidation();
   };
 
   useEffect(() => {
@@ -78,7 +90,7 @@ const Login = (props) => {
       password: "",
     });
     setLoginError("");
-  }, [loginType]);
+  }, [loginType, setLoginData]);
 
   useEffect(() => {
     setLoginError("");
@@ -96,7 +108,7 @@ const Login = (props) => {
             <a
               className="nav-link active"
               id="pills-home-tab"
-              data-toggle="pill"
+              data-bs-toggle="pill"
               href="#admin"
               role="tab"
               aria-controls="pills-home"
@@ -109,7 +121,7 @@ const Login = (props) => {
             <a
               className="nav-link"
               id="pills-profile-tab"
-              data-toggle="pill"
+              data-bs-toggle="pill"
               href="#register"
               role="tab"
               aria-controls="pills-profile"
@@ -145,12 +157,8 @@ const Login = (props) => {
                 : "btn btn-primary"
             }
           `}
-          onClick={() =>
-            loginError === null
-              ? (setLoginValid(false), setLogOut(true))
-              : loginValidation()
-          }
-          data-dismiss={loginError === null && loginValid ? "modal" : ""}
+          onClick={handleSignIn}
+          data-bs-dismiss={loginError === null && loginValid ? "modal" : ""}
           aria-label="Close"
         >
           {loginError === null && loginValid

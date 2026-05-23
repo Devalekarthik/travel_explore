@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import ReadMoreandLess from "./ReadMoreandLess";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import { Link } from "react-scroll";
 import Select from "react-select";
 import { validateBookingForm } from "./Validation";
 import FormInput from "./FormInput";
@@ -66,6 +65,40 @@ const MoreDetails = (props) => {
       : setBookedHotel(selectedCard);
   };
 
+  const clearModalState = () => {
+    setTimeout(() => {
+      document.querySelectorAll(".modal-backdrop").forEach((backdrop) => {
+        backdrop.remove();
+      });
+      document.body.classList.remove("modal-open");
+      document.body.style.removeProperty("overflow");
+      document.body.style.removeProperty("padding-right");
+    }, 300);
+  };
+
+  const scrollToHotels = () => {
+    clearModalState();
+
+    setTimeout(() => {
+      const hotelsSection = document.getElementById("Hotels");
+      const navbar = document.querySelector(".navbar-block");
+
+      if (!hotelsSection) return;
+
+      const navbarHeight = navbar?.offsetHeight || 80;
+      const top =
+        hotelsSection.getBoundingClientRect().top +
+        window.pageYOffset -
+        navbarHeight -
+        24;
+
+      window.scrollTo({
+        top,
+        behavior: "smooth",
+      });
+    }, 350);
+  };
+
   useEffect(() => {
     setInputData({
       Fname: "",
@@ -95,6 +128,7 @@ const MoreDetails = (props) => {
               <img
                 src={selectedCard[0]?.Img}
                 className="moreDetails-img"
+                alt={selectedCard[0]?.place || "Selected travel option"}
               />
             </span>
           </div>
@@ -134,13 +168,13 @@ const MoreDetails = (props) => {
             {id === "places" ? (
               <>
                 {descOffers.map((item) => (
-                  <li>{item}</li>
+                  <li key={item}>{item}</li>
                 ))}
               </>
             ) : (
               <>
                 {hotelsOffers.map((item) => (
-                  <li>{item}</li>
+                  <li key={item}>{item}</li>
                 ))}
               </>
             )}
@@ -283,6 +317,7 @@ const MoreDetails = (props) => {
         title=""
         showCloseButton={true}
         className="modal3"
+        onClose={clearModalState}
       >
         <p>
           <h1>{Data.LabelData.thankyou}</h1>
@@ -302,20 +337,22 @@ const MoreDetails = (props) => {
               type="button"
               data-bs-dismiss="modal"
               aria-label="Close"
-              href=""
+              onClick={scrollToHotels}
             >
-              <Link
-                activeClass="active"
-                to="Hotels"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={1000}
-              >
-                {Data.LabelData.bookHotel}
-              </Link>
+              {Data.LabelData.bookHotel}
             </button>
           </>
+        )}
+        {id === "hotels" && (
+          <button
+            className="btn btn-primary"
+            type="button"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+            onClick={clearModalState}
+          >
+            {Data.LabelData.submit}
+          </button>
         )}
       </Modal>
     </div>
