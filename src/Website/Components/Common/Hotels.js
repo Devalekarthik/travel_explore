@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Cards from "./Cards";
 
 const Hotels = (props) => {
@@ -6,8 +6,10 @@ const Hotels = (props) => {
 
   const [AllHotels, setAllHotels] = useState(true);
 
-  const hotelsData = revisedData.map((item) => item.hotels).flat() || [];
-  const hotels = [...hotelsData].sort((a, b) => b.rating - a.rating);
+  const hotels = useMemo(() => {
+    const hotelsData = revisedData.map((item) => item.hotels).flat() || [];
+    return [...hotelsData].sort((a, b) => b.rating - a.rating);
+  }, [revisedData]);
 
   const filterHotel =
     bookedDestination.length !== 0 && AllHotels
@@ -23,7 +25,7 @@ const Hotels = (props) => {
   };
 
   useEffect(() => {
-    setAllHotels(filterHotel);
+    setAllHotels(true);
   }, [bookedDestination]);
 
   const hotelsCardsData = {
@@ -36,7 +38,11 @@ const Hotels = (props) => {
   return (
     <div className="hotels" id="Hotels">
       <div className="hotels-offers">
-        <img src="./Hotel/hotelsPlanImg.jpg" className="hotels-bgimg" />
+        <img
+          src="./Hotel/hotelsPlanImg.jpg"
+          className="hotels-bgimg"
+          alt="Hotel offer"
+        />
         <span className="hotels-specialTag">
           {Data.LabelData.specialOffers}
         </span>

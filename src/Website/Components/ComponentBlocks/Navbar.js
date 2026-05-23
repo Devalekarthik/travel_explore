@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import DehazeIcon from "@mui/icons-material/Dehaze";
 import CancelIcon from "@mui/icons-material/Cancel";
-import { Link } from "react-scroll";
 import Login from "./Login";
 
 const Navbar = (props) => {
   const { Data } = props;
 
   const [navbarIcon, setNavbarIcon] = useState(true);
+  const [activeTab, setActiveTab] = useState(Data.Header["nav-name"][0].tab);
+  const navbarRef = useRef(null);
 
   const [loginData, setLoginData] = useState({
     name: "",
@@ -15,7 +16,6 @@ const Navbar = (props) => {
     password: "",
   });
   const [logOut, setLogOut] = useState(false);
-  const [logOutSucces, setLogOutSucces] = useState(false);
 
   const loginDataDetails = {
     Data: Data,
@@ -24,9 +24,74 @@ const Navbar = (props) => {
     setLogOut: setLogOut,
   };
 
+  const closeMobileMenu = () => {
+    if (window.innerWidth <= 1200) {
+      setNavbarIcon(true);
+    }
+  };
+
+  const getScrollOffset = () => {
+    const navbarHeight = navbarRef.current?.offsetHeight || 80;
+    return navbarHeight + 24;
+  };
+
+  const scrollToSection = (tab) => {
+    const section = document.getElementById(tab);
+
+    if (!section) return;
+
+    const top =
+      section.getBoundingClientRect().top + window.pageYOffset - getScrollOffset();
+
+    window.scrollTo({
+      top,
+      behavior: "smooth",
+    });
+
+    setActiveTab(tab);
+    closeMobileMenu();
+  };
+
+  const handleLoginButton = () => {
+    if (logOut) {
+      setLogOut(false);
+      closeMobileMenu();
+      return;
+    }
+
+    setLoginData({
+      name: "",
+      email: "",
+      password: "",
+    });
+    closeMobileMenu();
+  };
+
+  useEffect(() => {
+    const navItems = Data.Header["nav-name"].map((item) => item.tab);
+
+    const handleScroll = () => {
+      const scrollPoint = window.pageYOffset + getScrollOffset() + 20;
+      const currentTab = navItems.reduce((current, tab) => {
+        const section = document.getElementById(tab);
+
+        if (!section) return current;
+
+        return section.offsetTop <= scrollPoint ? tab : current;
+      }, navItems[0]);
+
+      setActiveTab(currentTab);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [Data.Header]);
+
   return (
     <>
-      <nav className="navbar-block">
+      <nav className="navbar-block" ref={navbarRef}>
         <span className="navbar-logo">{Data.Header.company}</span>
         <div
           className="navbar-menuIcon"
@@ -36,38 +101,23 @@ const Navbar = (props) => {
         </div>
         <div className={`navbar-menu ${navbarIcon ? "" : "navbar-mobile"}`}>
           {Data.Header["nav-name"].map((item) => (
-            <div>
-              <Link
-                activeClass="active"
-                to={item.tab}
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={1500}
-                className="navbar-link"
-                onClick={() => setNavbarIcon(!navbarIcon)}
+            <div key={item.tab}>
+              <button
+                type="button"
+                className={`navbar-link ${
+                  activeTab === item.tab ? "navbar-link-active" : ""
+                }`}
+                onClick={() => scrollToSection(item.tab)}
               >
                 {item.tab}
-              </Link>
+              </button>
             </div>
           ))}
           <button
             className={`navbar-signUpBtn ${logOut && "navbar-signOutBtn"}`}
-            data-toggle={logOutSucces ? "" : "modal"}
-            data-target={logOutSucces ? "" : "#login"}
-            onClick={() =>
-              logOut
-                ? (setLogOut(false),
-                  setLogOutSucces(true),
-                  setNavbarIcon(!navbarIcon))
-                : (setLoginData({
-                    name: "",
-                    email: "",
-                    password: "",
-                  }),
-                  setLogOutSucces(false),
-                  setNavbarIcon(!navbarIcon))
-            }
+            data-bs-toggle={logOut ? "" : "modal"}
+            data-bs-target={logOut ? "" : "#login"}
+            onClick={handleLoginButton}
           >
             {logOut ? Data.LabelData.signOut : Data.LabelData.signIn}
           </button>

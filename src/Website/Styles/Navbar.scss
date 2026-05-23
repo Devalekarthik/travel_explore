@@ -73,15 +73,22 @@
         }
 
         .navbar-link {
+            background: transparent;
+            border: none;
+            color: black;
+            cursor: pointer;
             font-size: 1.0625rem;
             font-weight: 600;
+            font-family: inherit;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 0;
             width: auto;
             height: 5rem;
             text-align: center;
             justify-content: center;
+            text-decoration: none;
 
             @media (max-width: $desktop) {
                 width: 100%;
@@ -89,7 +96,8 @@
                 height: 4rem;
             }
 
-            &:hover {
+            &:hover,
+            &.navbar-link-active {
                 border-bottom: 0.3125rem solid #01959a;
                 color: #01959a;
                 transition: 0.2s ease-in-out;

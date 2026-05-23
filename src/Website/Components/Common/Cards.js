@@ -1,6 +1,4 @@
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import "bootstrap-4-react";
-import "bootstrap";
 import { useState } from "react";
 import MoreDetails from "./MoreDetails";
 import StarRating from "./StarRating";
@@ -22,9 +20,13 @@ const Cards = (props) => {
     <div className="cards">
       {destination.map((item) => {
         return (
-          <div className="cards-block">
+          <div className="cards-block" key={`${id}-${item?.place}`}>
             <div className="cards-blockImg">
-              <img src={item?.Img} className="cards-img" />
+              <img
+                src={item?.Img}
+                className="cards-img"
+                alt={item?.place || "Destination"}
+              />
               <div className="cards-details">
                 <div className="cards-info">
                   <div>

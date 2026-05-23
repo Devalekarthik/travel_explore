@@ -3,7 +3,11 @@ const Banner = (prop) => {
 
   return (
     <div className="banner">
-      <img src={Data?.Header?.bannerImg} className="banner-video" />
+      <img
+        src={Data?.Header?.bannerImg}
+        className="banner-video"
+        alt={Data?.Header?.title || "Travel banner"}
+      />
       {Data?.Header?.title && (
         <div className="banner-info">
           <div className="banner-title">{Data?.Header?.title}</div>

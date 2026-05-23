@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Select from "react-select";
 import Cards from "./Cards";
 
@@ -15,14 +15,19 @@ const Destination = (props) => {
     setSelectedCountry(searchBox);
   };
 
-  const revisedCountry = revisedData.filter(
-    (item) => item.country === selectedCountry
+  const revisedCountry = useMemo(
+    () => revisedData.filter((item) => item.country === selectedCountry),
+    [revisedData, selectedCountry]
   );
 
-  const countries = ["All Country", ...new Set(revisedData.map((item) => item.country))].sort();
+  const countries = useMemo(
+    () =>
+      ["All Country", ...new Set(revisedData.map((item) => item.country))].sort(),
+    [revisedData]
+  );
   const countryOption = countries.map((item) => ({ label: item, value: item }));
 
-  const handleNavbar = (type) => {
+  const handleNavbar = useCallback((type) => {
     const DataType = (revised) =>
       type !== "All" ? revised.filter((item) => item.type === type) : revised;
 
@@ -32,27 +37,29 @@ const Destination = (props) => {
         : DataType(revisedCountry);
     setNavbarType(type);
     setDestination(revisedNavbar);
-  };
+  }, [revisedCountry, revisedData, selectedCountry]);
 
-  const navbar = [
-    ...new Set(
-      (selectedCountry === "All Country" ? revisedData : revisedCountry).map(
-        (item) => item.type
-      )
-    ),
-  ];
-  navbar.unshift("All");
-  navbar.sort();
+  const navbar = useMemo(() => {
+    const navbarItems = [
+      ...new Set(
+        (selectedCountry === "All Country" ? revisedData : revisedCountry).map(
+          (item) => item.type
+        )
+      ),
+    ];
+    navbarItems.unshift("All");
+    return navbarItems.sort();
+  }, [revisedCountry, revisedData, selectedCountry]);
 
   useEffect(() => {
     setDestination(revisedCountry);
     handleNavbar("All");
-  }, [selectedCountry]);
+  }, [handleNavbar, revisedCountry, selectedCountry]);
 
   useEffect(() => {
     setDestination(revisedData);
     setSelectedCountry("All Country");
-  }, []);
+  }, [revisedData]);
 
   const destinationCardData = {
     Data: Data,
@@ -89,6 +96,7 @@ const Destination = (props) => {
           {navbar.map((item) => {
             return (
               <button
+                key={item}
                 onClick={() => handleNavbar(item)}
                 className={`destination-navbarBtn ${
                   navbarType === item ? "destination-selectedButton" : ""

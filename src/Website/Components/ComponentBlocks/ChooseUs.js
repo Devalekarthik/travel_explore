@@ -6,8 +6,16 @@ const ChooseUs = (props) => {
   return (
     <div className="chooseUs" id="Reviews">
       <div className="chooseUs-imgs">
-        <img src={Data.ChooseUs.chooseUsImg1} className="chooseUs-bgimg" />
-        <img src={Data.ChooseUs.chooseUsImg2} className="chooseUs-smimg" />
+        <img
+          src={Data.ChooseUs.chooseUsImg1}
+          className="chooseUs-bgimg"
+          alt={Data.ChooseUs.title}
+        />
+        <img
+          src={Data.ChooseUs.chooseUsImg2}
+          className="chooseUs-smimg"
+          alt={Data.ChooseUs.title}
+        />
       </div>
       <div className="chooseUs-block">
         <div className="chooseUs-texts">
@@ -16,10 +24,14 @@ const ChooseUs = (props) => {
         </div>
         {Data.ChooseUs.safety.map((item) => {
           return (
-            <div className="chooseUs-safety">
+            <div className="chooseUs-safety" key={item.safetyTitle}>
               <div className="chooseUs-safetyImages">
                 {item.safetyImg !== "" ? (
-                  <img src={item.safetyImg} className="chooseUs-safetyImg" />
+                  <img
+                    src={item.safetyImg}
+                    className="chooseUs-safetyImg"
+                    alt={item.safetyTitle}
+                  />
                 ) : (
                   <HealthAndSafetyIcon />
                 )}
