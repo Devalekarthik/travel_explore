@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import LocalData from "../../Data/data.json";
+import React, { useCallback, useEffect, useState } from "react";
 import Navbar from "../ComponentBlocks/Navbar";
 import Banner from "../ComponentBlocks/Banner";
 import RatingViews from "../ComponentBlocks/RatingViews";
@@ -10,31 +9,51 @@ import ClientsReview from "../ComponentBlocks/ClientsReview";
 import ContactDetails from "../ComponentBlocks/ContactDetails";
 import Portfolio from "../ComponentBlocks/Portfolio";
 import Footer from "../ComponentBlocks/Footer";
+import { fetchAllContent } from "../../api/contentApi";
 
 const HomePage = () => {
   const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const load = useCallback(({ signal } = {}) => {
+    setIsLoading(true);
+    setError(null);
+
+    return fetchAllContent({ signal })
+      .then((json) => {
+        setData(json);
+      })
+      .catch((e) => {
+        if (e?.name === "AbortError") return;
+        console.error(e);
+        setData(null);
+        setError("Unable to load website content. Please try again.");
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  }, []);
 
   useEffect(() => {
-    let isMounted = true;
+    const controller = new AbortController();
+    load({ signal: controller.signal });
+    return () => controller.abort();
+  }, [load]);
 
-    const load = async () => {
-      const response = await fetch("http://localhost:8080/api/content");
-      if (!response.ok) {
-        throw new Error(`Failed to load content: ${response.status}`);
-      }
-      const json = await response.json();
-      if (isMounted) setData(json);
-    };
+  if (isLoading) return <div className="home">Loading...</div>;
 
-    load().catch((e) => {
-      console.error(e);
-      if (isMounted) setData(LocalData);
-    });
-
-    return () => {
-      isMounted = false;
-    };
-  }, []);
+  if (error) {
+    return (
+      <div className="home" style={{ padding: 24 }}>
+        <h2 style={{ margin: 0, marginBottom: 8 }}>Something went wrong</h2>
+        <p style={{ margin: 0, marginBottom: 16 }}>{error}</p>
+        <button type="button" onClick={() => load()}>
+          Retry
+        </button>
+      </div>
+    );
+  }
 
   if (!data) return null;
 
