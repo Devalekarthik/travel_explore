@@ -9,53 +9,54 @@ import ClientsReview from "../ComponentBlocks/ClientsReview";
 import ContactDetails from "../ComponentBlocks/ContactDetails";
 import Portfolio from "../ComponentBlocks/Portfolio";
 import Footer from "../ComponentBlocks/Footer";
-import { fetchAllContent } from "../../api/contentApi";
+import localData from "../../Data/data.json";
+// import { fetchAllContent } from "../../api/contentApi";
 
 const HomePage = () => {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [data, setData] = useState(localData);
+  // const [error, setError] = useState(null);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  const load = useCallback(({ signal } = {}) => {
-    setIsLoading(true);
-    setError(null);
+  // const load = useCallback(({ signal } = {}) => {
+  //   setIsLoading(true);
+  //   setError(null);
 
-    return fetchAllContent({ signal })
-      .then((json) => {
-        setData(json);
-      })
-      .catch((e) => {
-        if (e?.name === "AbortError") return;
-        console.error(e);
-        setData(null);
-        setError("Unable to load website content. Please try again.");
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
-  }, []);
+  //   return fetchAllContent({ signal })
+  //     .then((json) => {
+  //       setData(json);
+  //     })
+  //     .catch((e) => {
+  //       if (e?.name === "AbortError") return;
+  //       console.error(e);
+  //       setData(null);
+  //       setError("Unable to load website content. Please try again.");
+  //     })
+  //     .finally(() => {
+  //       setIsLoading(false);
+  //     });
+  // }, []);
 
-  useEffect(() => {
-    const controller = new AbortController();
-    load({ signal: controller.signal });
-    return () => controller.abort();
-  }, [load]);
+  // useEffect(() => {
+  //   const controller = new AbortController();
+  //   load({ signal: controller.signal });
+  //   return () => controller.abort();
+  // }, [load]);
 
-  if (isLoading) return <div className="home">Loading...</div>;
+  // if (isLoading) return <div className="home">Loading...</div>;
 
-  if (error) {
-    return (
-      <div className="home" style={{ padding: 24 }}>
-        <h2 style={{ margin: 0, marginBottom: 8 }}>Something went wrong</h2>
-        <p style={{ margin: 0, marginBottom: 16 }}>{error}</p>
-        <button type="button" onClick={() => load()}>
-          Retry
-        </button>
-      </div>
-    );
-  }
+  // if (error) {
+  //   return (
+  //     <div className="home" style={{ padding: 24 }}>
+  //       <h2 style={{ margin: 0, marginBottom: 8 }}>Something went wrong</h2>
+  //       <p style={{ margin: 0, marginBottom: 16 }}>{error}</p>
+  //       <button type="button" onClick={() => load()}>
+  //         Retry
+  //       </button>
+  //     </div>
+  //   );
+  // }
 
-  if (!data) return null;
+  // if (!data) return null;
 
   const DataJSON = { Data: data };
 
